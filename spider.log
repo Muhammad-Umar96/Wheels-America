@@ -1,0 +1,2115 @@
+2026-01-30 11:44:13 [scrapy.utils.log] INFO: Scrapy 2.13.4 started (bot: wheelsamerica)
+2026-01-30 11:44:14 [scrapy.utils.log] INFO: Versions:
+{'lxml': '6.0.2',
+ 'libxml2': '2.11.9',
+ 'cssselect': '1.3.0',
+ 'parsel': '1.10.0',
+ 'w3lib': '2.3.1',
+ 'Twisted': '25.5.0',
+ 'Python': '3.14.0 (tags/v3.14.0:ebf955d, Oct  7 2025, 10:15:03) [MSC v.1944 '
+           '64 bit (AMD64)]',
+ 'pyOpenSSL': '25.3.0 (OpenSSL 3.5.4 30 Sep 2025)',
+ 'cryptography': '46.0.3',
+ 'Platform': 'Windows-11-10.0.26200-SP0'}
+2026-01-30 11:44:14 [scrapy.addons] INFO: Enabled addons:
+[]
+2026-01-30 11:44:14 [asyncio] DEBUG: Using selector: SelectSelector
+2026-01-30 11:44:14 [scrapy.utils.log] DEBUG: Using reactor: twisted.internet.asyncioreactor.AsyncioSelectorReactor
+2026-01-30 11:44:14 [scrapy.utils.log] DEBUG: Using asyncio event loop: asyncio.windows_events._WindowsSelectorEventLoop
+2026-01-30 11:44:14 [scrapy.extensions.telnet] INFO: Telnet Password: 0bd91d6853ccd530
+2026-01-30 11:44:14 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.feedexport.FeedExporter',
+ 'scrapy.extensions.logstats.LogStats']
+2026-01-30 11:44:14 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'wheelsamerica',
+ 'CONCURRENT_REQUESTS': 8,
+ 'DOWNLOAD_DELAY': 1.0,
+ 'FEED_EXPORT_ENCODING': 'utf-8-sig',
+ 'LOG_FILE': 'spider.log',
+ 'NEWSPIDER_MODULE': 'wheelsamerica.spiders',
+ 'RETRY_HTTP_CODES': [500, 502, 503, 504, 408, 429],
+ 'RETRY_TIMES': 5,
+ 'SPIDER_MODULES': ['wheelsamerica.spiders']}
+2026-01-30 11:44:14 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'wheelsamerica.middlewares.RotateAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2026-01-30 11:44:14 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.start.StartSpiderMiddleware',
+ 'scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2026-01-30 11:44:14 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2026-01-30 11:44:14 [scrapy.core.engine] INFO: Spider opened
+2026-01-30 11:44:14 [py.warnings] WARNING: D:\Scrapy-Playwright\venv\Lib\site-packages\scrapy\core\spidermw.py:433: ScrapyDeprecationWarning: wheelsamerica.spiders.wheels_spider.WheelsSpiderSpider defines the deprecated start_requests() method. start_requests() has been deprecated in favor of a new method, start(), to support asynchronous code execution. start_requests() will stop being called in a future version of Scrapy. If you use Scrapy 2.13 or higher only, replace start_requests() with start(); note that start() is a coroutine (async def). If you need to maintain compatibility with lower Scrapy versions, when overriding start_requests() in a spider class, override start() as well; you can use super() to reuse the inherited start() implementation without copy-pasting. See the release notes of Scrapy 2.13 for details: https://docs.scrapy.org/en/2.13/news.html
+  warn(
+
+2026-01-30 11:44:14 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2026-01-30 11:44:14 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2026-01-30 11:44:16 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wheelsamerica.com/> (referer: None)
+2026-01-30 11:44:16 [wheels_spider] INFO: Scraping page: https://wheelsamerica.com/
+2026-01-30 11:44:16 [wheels_spider] INFO: Found 12 products on this page
+2026-01-30 11:44:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wheelsamerica.com/product/jeep-wrangler-1987-1995-15-oem-wheel-rim/> (referer: https://wheelsamerica.com/)
+2026-01-30 11:44:19 [wheels_spider] INFO: Parsing wheel detail - URL: https://wheelsamerica.com/product/jeep-wrangler-1987-1995-15-oem-wheel-rim/
+2026-01-30 11:44:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wheelsamerica.com/product/jeep-wrangler-1987-1995-15-oem-wheel-rim/>
+{'Int2': '8826-1512',
+ 'bolt_circle': '4.5',
+ 'condition': 'Refurbished',
+ 'desc2': '15×7  5 lug wheel.  WHEEL ONLY! Does not include center cap, lugs, '
+          'or TPMS sensor.',
+ 'finish': 'Machined',
+ 'indents': [],
+ 'interchange': '1512',
+ 'inventory': '24',
+ 'lugs': '5',
+ 'partnumbers': ['Part#: 52003368'],
+ 'price': '$188.63',
+ 'sizes': '15',
+ 'spokes': '5',
+ 'title': 'Jeep Wrangler 1987-1995 15″ OEM Wheel Machined',
+ 'variations': 'No Variations',
+ 'vehicles': ['1987-1995 Jeep Wrangler',
+              '1987-1990 Jeep Wagoneer',
+              '1987-1993 Jeep Cherokee',
+              '1987-1992 Jeep Comanche'],
+ 'width': '7'}
+2026-01-30 11:44:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wheelsamerica.com/product/subaru-impreza-2017-2019-18-oem-wheel-rim-2/> (referer: https://wheelsamerica.com/)
+2026-01-30 11:44:20 [wheels_spider] INFO: Parsing wheel detail - URL: https://wheelsamerica.com/product/subaru-impreza-2017-2019-18-oem-wheel-rim-2/
+2026-01-30 11:44:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wheelsamerica.com/product/subaru-impreza-2017-2019-18-oem-wheel-rim-2/>
+{'Int2': '18492-68848',
+ 'bolt_circle': '100',
+ 'condition': 'Refurbished',
+ 'desc2': '18×7.5  5 lug wheel.  WHEEL ONLY! Does not include center cap, '
+          'lugs, or TPMS sensor.',
+ 'finish': 'Machined',
+ 'indents': ['Ident#: 28111FL02A'],
+ 'interchange': '68848',
+ 'inventory': '3',
+ 'lugs': '5',
+ 'partnumbers': ['Part#: 28111FL02A'],
+ 'price': '$286.67',
+ 'sizes': '18',
+ 'spokes': '10',
+ 'title': '2017-2021 Subaru Impreza 18″ OEM Wheel Rim Machined w/ Dark '
+          'Charcoal Pockets',
+ 'variations': 'Machined w/ Dark Charcoal Pockets',
+ 'vehicles': ['2017-2019 Subaru Impreza'],
+ 'width': '7.5'}
+2026-01-30 11:44:21 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wheelsamerica.com/product/ford-fusion-2017-2019-18-oem-wheel-rim-2/> (referer: https://wheelsamerica.com/)
+2026-01-30 11:44:21 [wheels_spider] INFO: Parsing wheel detail - URL: https://wheelsamerica.com/product/ford-fusion-2017-2019-18-oem-wheel-rim-2/
+2026-01-30 11:44:21 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wheelsamerica.com/product/ford-fusion-2017-2019-18-oem-wheel-rim-2/>
+{'Int2': '20437-10120',
+ 'bolt_circle': '108',
+ 'condition': 'Refurbished',
+ 'desc2': '18×8  5 lug wheel.  WHEEL ONLY! Does not include center cap, lugs, '
+          'or TPMS sensor.',
+ 'finish': 'Painted',
+ 'indents': ['Ident#: HS7Z1007A',
+             'Ident#: HS7C1007B1A',
+             'Ident#: HS7CB1A',
+             'Ident#: KS7C1007G1A',
+             'Ident#: KS7Z1007C',
+             'Ident#: KS7C1007B1A'],
+ 'interchange': '10120',
+ 'inventory': '8',
+ 'lugs': '5',
+ 'partnumbers': ['Part#: HS7C1007B1A',
+                 'Part#: HS7CB1A',
+                 'Part#: KS7Z1007C',
+                 'Part#: KS7Z1007E',
+                 'Part#: KS7C1007G1A',
+                 'Part#: HS7Z1007A',
+                 'Part#: JS7Z1007A'],
+ 'price': '$226.33',
+ 'sizes': '18',
+ 'spokes': '10',
+ 'title': '2018-2020 Ford Fusion 18″ OEM Wheel Rim Charcoal',
+ 'variations': 'Charcoal',
+ 'vehicles': ['2017-2020 Ford Fusion'],
+ 'width': '8'}
+2026-01-30 11:44:21 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wheelsamerica.com/product/toyota-camry-2018-2020-18-replica-wheel-rim/> (referer: https://wheelsamerica.com/)
+2026-01-30 11:44:21 [wheels_spider] INFO: Parsing wheel detail - URL: https://wheelsamerica.com/product/toyota-camry-2018-2020-18-replica-wheel-rim/
+2026-01-30 11:44:21 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wheelsamerica.com/product/toyota-camry-2018-2020-18-replica-wheel-rim/>
+{'Int2': '21075-75221',
+ 'bolt_circle': '4.5',
+ 'condition': 'New',
+ 'desc2': '18×8  5 lug wheel.  WHEEL ONLY! Does not include center cap, lugs, '
+          'or TPMS sensor.',
+ 'finish': 'Machined',
+ 'indents': ['Ident#: 4261106F80',
+             'Ident#: 4261106F90',
+             'Ident#: 4261106E10',
+             'Ident#: 4261106F70',
+             'Ident#: 4261133D10',
+             'Ident#: 4261133D30',
+             'Ident#: BBM'],
+ 'interchange': '75221',
+ 'inventory': '137',
+ 'lugs': '5',
+ 'partnumbers': ['Part#: 4261106J00',
+                 'Part#: 4261106F80',
+                 'Part#: 4261106F90',
+                 'Part#: 4261106E10',
+                 'Part#: 4261106F70',
+                 'Part#: 4261133D10',
+                 'Part#: 4261133D30'],
+ 'price': '$193.03',
+ 'sizes': '18',
+ 'spokes': '20',
+ 'title': '2018-2022 Toyota Camry 18″ Wheel Rim Replica Machined w/ Black '
+          'Pockets',
+ 'variations': 'Replica Machined w/ Black Pockets',
+ 'vehicles': ['2018-2022 Toyota Camry'],
+ 'width': '8'}
+2026-01-30 11:44:24 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wheelsamerica.com/product/mercedes-benz-s550-2014-2017-20-replica-wheel-rim-2/> (referer: https://wheelsamerica.com/)
+2026-01-30 11:44:24 [wheels_spider] INFO: Parsing wheel detail - URL: https://wheelsamerica.com/product/mercedes-benz-s550-2014-2017-20-replica-wheel-rim-2/
+2026-01-30 11:44:24 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wheelsamerica.com/product/mercedes-benz-s550-2014-2017-20-replica-wheel-rim-2/>
+{'Int2': '20409-85355',
+ 'bolt_circle': '112',
+ 'condition': 'New',
+ 'desc2': '20×9.5  5 lug wheel.  WHEEL ONLY! Does not include center cap, '
+          'lugs, or TPMS sensor.',
+ 'finish': 'Machined',
+ 'indents': ['Ident#: 2224010500',
+             'Ident#: 22240105007X21',
+             'Ident#: 22240100027X45',
+             'Ident#: 22240117027756',
+             'Ident#: 222401050080'],
+ 'interchange': '85355',
+ 'inventory': '74',
+ 'lugs': '5',
+ 'partnumbers': ['Part#: 2224010500',
+                 'Part#: 22240100027X45',
+                 'Part#: 222401050080',
+                 'Part#: 22240105007X21'],
+ 'price': '$357.93',
+ 'sizes': '20',
+ 'spokes': '14',
+ 'title': 'Mercedes-Benz S550 2014-2017 20″ Rear Replica Wheel Machined',
+ 'variations': 'Replica Machined w/ Charcoal Pockets',
+ 'vehicles': ['2015-2016 Mercedes-Benz S400',
+              '2016-2016 Mercedes-Benz S600',
+              '2014-2017 Mercedes-Benz S550',
+              '2014-2018 Mercedes-Benz S Class',
+              '2015-2016 Mercedes-Benz S550e',
+              '2014-2018 Mercedes-Benz CLS550'],
+ 'width': '9.5'}
+2026-01-30 11:44:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wheelsamerica.com/product/ford-explorer-2016-2019-20-oem-wheel-rim-4/> (referer: https://wheelsamerica.com/)
+2026-01-30 11:44:25 [wheels_spider] INFO: Parsing wheel detail - URL: https://wheelsamerica.com/product/ford-explorer-2016-2019-20-oem-wheel-rim-4/
+2026-01-30 11:44:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wheelsamerica.com/product/ford-explorer-2016-2019-20-oem-wheel-rim-4/>
+{'Int2': '14738-10060',
+ 'bolt_circle': '4.5',
+ 'condition': 'Refurbished',
+ 'desc2': '20×8.5  5 lug wheel.  WHEEL ONLY! Does not include center cap, '
+          'lugs, or TPMS sensor.',
+ 'finish': 'Polished',
+ 'indents': ['Ident#: FB531007BA', 'Ident#: FB53BA', 'Ident#: FB531007BB'],
+ 'interchange': '10060',
+ 'inventory': '7',
+ 'lugs': '5',
+ 'partnumbers': ['Part#: FB5Z1007C', 'Part#: FB531007BB'],
+ 'price': '$265.95',
+ 'sizes': '20',
+ 'spokes': '10',
+ 'title': '2013-2019 Ford Explorer 20″ OEM Wheel Rim Polished',
+ 'variations': 'Polished',
+ 'vehicles': ['2016-2019 Ford Explorer'],
+ 'width': '8.5'}
+2026-01-30 11:44:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wheelsamerica.com/product/honda-civic-2017-2020-18-replica-wheel-rim/> (referer: https://wheelsamerica.com/)
+2026-01-30 11:44:26 [wheels_spider] INFO: Parsing wheel detail - URL: https://wheelsamerica.com/product/honda-civic-2017-2020-18-replica-wheel-rim/
+2026-01-30 11:44:26 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wheelsamerica.com/product/honda-civic-2017-2020-18-replica-wheel-rim/>
+{'Int2': '22192-64108',
+ 'bolt_circle': '4.5',
+ 'condition': 'New',
+ 'desc2': '18×8  5 lug wheel.  WHEEL ONLY! Does not include center cap, lugs, '
+          'or TPMS sensor.',
+ 'finish': 'Machined',
+ 'indents': ['Ident#: 42700TGGA71',
+             'Ident#: 42700TBFA91',
+             'Ident#: 42700TGGA72',
+             'Ident#: 42800TBAAC2',
+             'Ident#: TBF18080A'],
+ 'interchange': '64108',
+ 'inventory': '115',
+ 'lugs': '5',
+ 'partnumbers': ['Part#: 42700TGGA72',
+                 'Part#: 42800TBAAC2',
+                 'Part#: 42700TGGA71',
+                 'Part#: 42700TBFA91',
+                 'Part#: 42700TBAAD1'],
+ 'price': '$173.63',
+ 'sizes': '18',
+ 'spokes': '10',
+ 'title': '2021 Honda Civic 18″ Wheel Rim Replica Machined',
+ 'variations': 'Replica Machined',
+ 'vehicles': ['2017-2021 Honda Civic'],
+ 'width': '8'}
+2026-01-30 11:44:28 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wheelsamerica.com/product/mercedes-benz-s550-2014-2017-20-replica-wheel-rim/> (referer: https://wheelsamerica.com/)
+2026-01-30 11:44:28 [wheels_spider] INFO: Parsing wheel detail - URL: https://wheelsamerica.com/product/mercedes-benz-s550-2014-2017-20-replica-wheel-rim/
+2026-01-30 11:44:28 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wheelsamerica.com/product/mercedes-benz-s550-2014-2017-20-replica-wheel-rim/>
+{'Int2': '20408-85353',
+ 'bolt_circle': '112',
+ 'condition': 'New',
+ 'desc2': '20×8.5  5 lug wheel.  WHEEL ONLY! Does not include center cap, '
+          'lugs, or TPMS sensor.',
+ 'finish': 'Machined',
+ 'indents': ['Ident#: 2224010400',
+             'Ident#: 22240104007X21',
+             'Ident#: 22240104007X23',
+             'Ident#: 222401040080'],
+ 'interchange': '85353',
+ 'inventory': '101',
+ 'lugs': '5',
+ 'partnumbers': ['Part#: 2224010400',
+                 'Part#: 222401040080',
+                 'Part#: 22240104007X21',
+                 'Part#: 22240104007X23'],
+ 'price': '$299.73',
+ 'sizes': '20',
+ 'spokes': '14',
+ 'title': 'Mercedes-Benz S550 2014-2017 20″ Front Replica Wheel Machined',
+ 'variations': 'Replica Machined w/ Charcoal Pockets',
+ 'vehicles': ['2014-2017 Mercedes-Benz S550',
+              '2015-2016 Mercedes-Benz S400',
+              '2014-2018 Mercedes-Benz S Class',
+              '2018-2019 Mercedes-Benz S450',
+              '2015-2017 Mercedes-Benz S550e',
+              '2015-2019 Mercedes-Benz S65 AMG',
+              '2018-2019 Mercedes-Benz S560',
+              '2015-2017 Mercedes-Benz S600',
+              '2014-2019 Mercedes-Benz S63 AMG'],
+ 'width': '8.5'}
+2026-01-30 11:44:29 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wheelsamerica.com/product/ford-fusion-2013-2016-19-oem-wheel-rim/> (referer: https://wheelsamerica.com/)
+2026-01-30 11:44:29 [wheels_spider] INFO: Parsing wheel detail - URL: https://wheelsamerica.com/product/ford-fusion-2013-2016-19-oem-wheel-rim/
+2026-01-30 11:44:29 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wheelsamerica.com/product/ford-fusion-2013-2016-19-oem-wheel-rim/>
+{'Int2': '6265-3962',
+ 'bolt_circle': '108',
+ 'condition': 'Refurbished',
+ 'desc2': '19×8  5 lug wheel.  WHEEL ONLY! Does not include center cap, lugs, '
+          'or TPMS sensor.',
+ 'finish': 'Hyper',
+ 'indents': ['Ident#: DS7C1007H1B', 'Ident#: DS7CH1B', 'Ident#: DS701007H1A'],
+ 'interchange': '3962',
+ 'inventory': '27',
+ 'lugs': '5',
+ 'partnumbers': ['Part#: DS7Z1007H'],
+ 'price': '$364.17',
+ 'sizes': '19',
+ 'spokes': '10',
+ 'title': 'Ford Fusion 2013-2016 19″ OEM Wheel',
+ 'variations': 'Hyper Silver',
+ 'vehicles': ['2013-2016 Ford Fusion'],
+ 'width': '8'}
+2026-01-30 11:44:30 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wheelsamerica.com/product/honda-accord-2016-2017-19-oem-wheel-rim-2/> (referer: https://wheelsamerica.com/)
+2026-01-30 11:44:30 [wheels_spider] INFO: Parsing wheel detail - URL: https://wheelsamerica.com/product/honda-accord-2016-2017-19-oem-wheel-rim-2/
+2026-01-30 11:44:31 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wheelsamerica.com/product/honda-accord-2016-2017-19-oem-wheel-rim-2/>
+{'Int2': '18615-64083',
+ 'bolt_circle': '4.5',
+ 'condition': 'Refurbished',
+ 'desc2': '19×8  5 lug wheel.  WHEEL ONLY! Does not include center cap, lugs, '
+          'or TPMS sensor.',
+ 'finish': 'Machined',
+ 'indents': ['Ident#: 42700T2AL92', 'Ident#: T2919080A'],
+ 'interchange': '64083',
+ 'inventory': '21',
+ 'lugs': '5',
+ 'partnumbers': ['Part#: 42700T2AL92'],
+ 'price': '$198.40',
+ 'sizes': '19',
+ 'spokes': '10',
+ 'title': 'Honda ACCORD 2016-2017 19″ OEM Wheel Machined',
+ 'variations': 'Machined w/ Black Pockets',
+ 'vehicles': ['2016-2017 Honda ACCORD'],
+ 'width': '8'}
+2026-01-30 11:44:32 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wheelsamerica.com/product/mercedes-benz-560sl-1986-1989-15-oem-wheel-rim-2/> (referer: https://wheelsamerica.com/)
+2026-01-30 11:44:32 [wheels_spider] INFO: Parsing wheel detail - URL: https://wheelsamerica.com/product/mercedes-benz-560sl-1986-1989-15-oem-wheel-rim-2/
+2026-01-30 11:44:32 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wheelsamerica.com/product/mercedes-benz-560sl-1986-1989-15-oem-wheel-rim-2/>
+{'Int2': '20421-65139',
+ 'bolt_circle': '112',
+ 'condition': 'Refurbished',
+ 'desc2': '15×7  5 lug wheel.  WHEEL ONLY! Does not include center cap, lugs, '
+          'or TPMS sensor.',
+ 'finish': 'Painted',
+ 'indents': ['Ident#: 1264003002', 'Ident#: 1264003402', 'Ident#: 1264003502'],
+ 'interchange': '65139',
+ 'inventory': '4',
+ 'lugs': '5',
+ 'partnumbers': ['Part#: 1264003002', 'Part#: 1264003502'],
+ 'price': '$297.18',
+ 'sizes': '15',
+ 'spokes': '15',
+ 'title': 'Mercedes-Benz 560SL 1986-1989 15″ OEM Wheel All Silver',
+ 'variations': 'All Silver',
+ 'vehicles': ['1986-1989 Mercedes-Benz 560SL',
+              '1986-1987 Mercedes-Benz 300D',
+              '1986-1987 Mercedes-Benz 300SDL',
+              '1987-1987 Mercedes-Benz 420',
+              '1986-1987 Mercedes-Benz 560SEC',
+              '1986-1987 Mercedes-Benz 560SEL',
+              '1986-1989 Mercedes-Benz 560'],
+ 'width': '7'}
+2026-01-30 11:44:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wheelsamerica.com/product/mercedes-benz-c300-2008-2014-18-replica-wheel-rim-2/> (referer: https://wheelsamerica.com/)
+2026-01-30 11:44:33 [wheels_spider] INFO: Parsing wheel detail - URL: https://wheelsamerica.com/product/mercedes-benz-c300-2008-2014-18-replica-wheel-rim-2/
+2026-01-30 11:44:33 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wheelsamerica.com/product/mercedes-benz-c300-2008-2014-18-replica-wheel-rim-2/>
+{'Int2': '18674-85058',
+ 'bolt_circle': '112',
+ 'condition': 'New',
+ 'desc2': '18×8  5 lug wheel.  WHEEL ONLY! Does not include center cap, lugs, '
+          'or TPMS sensor.',
+ 'finish': 'Machined',
+ 'indents': ['Ident#: 2044014102',
+             'Ident#: 20440141029700',
+             'Ident#: 20440141027X25',
+             'Ident#: A2044014102'],
+ 'interchange': '85058',
+ 'inventory': '147',
+ 'lugs': '5',
+ 'partnumbers': ['Part#: 20440141027X25',
+                 'Part#: A2044014102',
+                 'Part#: 20440141029700'],
+ 'price': '$290.03',
+ 'sizes': '18',
+ 'spokes': '10',
+ 'title': 'Mercedes-Benz C300 2008-2014 18″ Front Replica Wheel Machined',
+ 'variations': 'Replica Machined w/ Silver Pockets',
+ 'vehicles': ['2008-2015 Mercedes-Benz C350',
+              '2012-2015 Mercedes-Benz C250',
+              '2008-2015 Mercedes-Benz C Class',
+              '2008-2014 Mercedes-Benz C300',
+              '2008-2015 Mercedes-Benz C63 AMG'],
+ 'width': '8'}
+2026-01-30 11:44:33 [scrapy.core.engine] INFO: Closing spider (finished)
+2026-01-30 11:44:33 [scrapy.extensions.feedexport] INFO: Stored csv feed (12 items) in: results.csv
+2026-01-30 11:44:33 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 5106,
+ 'downloader/request_count': 13,
+ 'downloader/request_method_count/GET': 13,
+ 'downloader/response_bytes': 522939,
+ 'downloader/response_count': 13,
+ 'downloader/response_status_count/200': 13,
+ 'elapsed_time_seconds': 18.724851,
+ 'feedexport/success_count/FileFeedStorage': 1,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2026, 1, 30, 6, 44, 33, 676154, tzinfo=datetime.timezone.utc),
+ 'httpcompression/response_bytes': 2139942,
+ 'httpcompression/response_count': 13,
+ 'item_scraped_count': 12,
+ 'items_per_minute': 40.0,
+ 'log_count/DEBUG': 28,
+ 'log_count/INFO': 25,
+ 'log_count/WARNING': 1,
+ 'request_depth_max': 1,
+ 'response_received_count': 13,
+ 'responses_per_minute': 43.333333333333336,
+ 'scheduler/dequeued': 13,
+ 'scheduler/dequeued/memory': 13,
+ 'scheduler/enqueued': 13,
+ 'scheduler/enqueued/memory': 13,
+ 'start_time': datetime.datetime(2026, 1, 30, 6, 44, 14, 951303, tzinfo=datetime.timezone.utc)}
+2026-01-30 11:44:33 [scrapy.core.engine] INFO: Spider closed (finished)
+2026-01-30 11:44:52 [scrapy.utils.log] INFO: Scrapy 2.13.4 started (bot: wheelsamerica)
+2026-01-30 11:44:53 [scrapy.utils.log] INFO: Versions:
+{'lxml': '6.0.2',
+ 'libxml2': '2.11.9',
+ 'cssselect': '1.3.0',
+ 'parsel': '1.10.0',
+ 'w3lib': '2.3.1',
+ 'Twisted': '25.5.0',
+ 'Python': '3.14.0 (tags/v3.14.0:ebf955d, Oct  7 2025, 10:15:03) [MSC v.1944 '
+           '64 bit (AMD64)]',
+ 'pyOpenSSL': '25.3.0 (OpenSSL 3.5.4 30 Sep 2025)',
+ 'cryptography': '46.0.3',
+ 'Platform': 'Windows-11-10.0.26200-SP0'}
+2026-01-30 11:44:53 [scrapy.addons] INFO: Enabled addons:
+[]
+2026-01-30 11:44:53 [asyncio] DEBUG: Using selector: SelectSelector
+2026-01-30 11:44:53 [scrapy.utils.log] DEBUG: Using reactor: twisted.internet.asyncioreactor.AsyncioSelectorReactor
+2026-01-30 11:44:53 [scrapy.utils.log] DEBUG: Using asyncio event loop: asyncio.windows_events._WindowsSelectorEventLoop
+2026-01-30 11:44:53 [scrapy.extensions.telnet] INFO: Telnet Password: 4ee5c1d0c6ed41a8
+2026-01-30 11:44:53 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.feedexport.FeedExporter',
+ 'scrapy.extensions.logstats.LogStats']
+2026-01-30 11:44:53 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'wheelsamerica',
+ 'CONCURRENT_REQUESTS': 8,
+ 'DOWNLOAD_DELAY': 1.0,
+ 'FEED_EXPORT_ENCODING': 'utf-8-sig',
+ 'LOG_FILE': 'spider.log',
+ 'NEWSPIDER_MODULE': 'wheelsamerica.spiders',
+ 'RETRY_HTTP_CODES': [500, 502, 503, 504, 408, 429],
+ 'RETRY_TIMES': 5,
+ 'SPIDER_MODULES': ['wheelsamerica.spiders']}
+2026-01-30 11:44:53 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'wheelsamerica.middlewares.RotateAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2026-01-30 11:44:53 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.start.StartSpiderMiddleware',
+ 'scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2026-01-30 11:44:53 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2026-01-30 11:44:53 [scrapy.core.engine] INFO: Spider opened
+2026-01-30 11:44:53 [py.warnings] WARNING: D:\Scrapy-Playwright\venv\Lib\site-packages\scrapy\core\spidermw.py:433: ScrapyDeprecationWarning: wheelsamerica.spiders.wheels_spider.WheelsSpiderSpider defines the deprecated start_requests() method. start_requests() has been deprecated in favor of a new method, start(), to support asynchronous code execution. start_requests() will stop being called in a future version of Scrapy. If you use Scrapy 2.13 or higher only, replace start_requests() with start(); note that start() is a coroutine (async def). If you need to maintain compatibility with lower Scrapy versions, when overriding start_requests() in a spider class, override start() as well; you can use super() to reuse the inherited start() implementation without copy-pasting. See the release notes of Scrapy 2.13 for details: https://docs.scrapy.org/en/2.13/news.html
+  warn(
+
+2026-01-30 11:44:53 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2026-01-30 11:44:53 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2026-01-30 11:44:55 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wheelsamerica.com/> (referer: None)
+2026-01-30 11:44:55 [wheels_spider] INFO: Scraping page: https://wheelsamerica.com/
+2026-01-30 11:44:55 [wheels_spider] INFO: Found 12 products on this page
+2026-01-30 11:44:55 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wheelsamerica.com/product/jeep-wrangler-1987-1995-15-oem-wheel-rim/> (referer: https://wheelsamerica.com/)
+2026-01-30 11:44:55 [wheels_spider] INFO: Parsing wheel detail - URL: https://wheelsamerica.com/product/jeep-wrangler-1987-1995-15-oem-wheel-rim/
+2026-01-30 11:44:55 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wheelsamerica.com/product/jeep-wrangler-1987-1995-15-oem-wheel-rim/>
+{'Int2': '8826-1512',
+ 'bolt_circle': '4.5',
+ 'condition': 'Refurbished',
+ 'desc2': '15×7  5 lug wheel.  WHEEL ONLY! Does not include center cap, lugs, '
+          'or TPMS sensor.',
+ 'finish': 'Machined',
+ 'indents': [],
+ 'interchange': '1512',
+ 'inventory': '24',
+ 'lugs': '5',
+ 'partnumbers': ['Part#: 52003368'],
+ 'price': '$188.63',
+ 'sizes': '15',
+ 'spokes': '5',
+ 'title': 'Jeep Wrangler 1987-1995 15″ OEM Wheel Machined',
+ 'variations': 'No Variations',
+ 'vehicles': ['1987-1995 Jeep Wrangler',
+              '1987-1990 Jeep Wagoneer',
+              '1987-1993 Jeep Cherokee',
+              '1987-1992 Jeep Comanche'],
+ 'width': '7'}
+2026-01-30 11:44:57 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wheelsamerica.com/product/subaru-impreza-2017-2019-18-oem-wheel-rim-2/> (referer: https://wheelsamerica.com/)
+2026-01-30 11:44:57 [wheels_spider] INFO: Parsing wheel detail - URL: https://wheelsamerica.com/product/subaru-impreza-2017-2019-18-oem-wheel-rim-2/
+2026-01-30 11:44:57 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wheelsamerica.com/product/subaru-impreza-2017-2019-18-oem-wheel-rim-2/>
+{'Int2': '18492-68848',
+ 'bolt_circle': '100',
+ 'condition': 'Refurbished',
+ 'desc2': '18×7.5  5 lug wheel.  WHEEL ONLY! Does not include center cap, '
+          'lugs, or TPMS sensor.',
+ 'finish': 'Machined',
+ 'indents': ['Ident#: 28111FL02A'],
+ 'interchange': '68848',
+ 'inventory': '3',
+ 'lugs': '5',
+ 'partnumbers': ['Part#: 28111FL02A'],
+ 'price': '$286.67',
+ 'sizes': '18',
+ 'spokes': '10',
+ 'title': '2017-2021 Subaru Impreza 18″ OEM Wheel Rim Machined w/ Dark '
+          'Charcoal Pockets',
+ 'variations': 'Machined w/ Dark Charcoal Pockets',
+ 'vehicles': ['2017-2019 Subaru Impreza'],
+ 'width': '7.5'}
+2026-01-30 11:44:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wheelsamerica.com/product/toyota-camry-2018-2020-18-replica-wheel-rim/> (referer: https://wheelsamerica.com/)
+2026-01-30 11:44:58 [wheels_spider] INFO: Parsing wheel detail - URL: https://wheelsamerica.com/product/toyota-camry-2018-2020-18-replica-wheel-rim/
+2026-01-30 11:44:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wheelsamerica.com/product/toyota-camry-2018-2020-18-replica-wheel-rim/>
+{'Int2': '21075-75221',
+ 'bolt_circle': '4.5',
+ 'condition': 'New',
+ 'desc2': '18×8  5 lug wheel.  WHEEL ONLY! Does not include center cap, lugs, '
+          'or TPMS sensor.',
+ 'finish': 'Machined',
+ 'indents': ['Ident#: 4261106F80',
+             'Ident#: 4261106F90',
+             'Ident#: 4261106E10',
+             'Ident#: 4261106F70',
+             'Ident#: 4261133D10',
+             'Ident#: 4261133D30',
+             'Ident#: BBM'],
+ 'interchange': '75221',
+ 'inventory': '137',
+ 'lugs': '5',
+ 'partnumbers': ['Part#: 4261106J00',
+                 'Part#: 4261106F80',
+                 'Part#: 4261106F90',
+                 'Part#: 4261106E10',
+                 'Part#: 4261106F70',
+                 'Part#: 4261133D10',
+                 'Part#: 4261133D30'],
+ 'price': '$193.03',
+ 'sizes': '18',
+ 'spokes': '20',
+ 'title': '2018-2022 Toyota Camry 18″ Wheel Rim Replica Machined w/ Black '
+          'Pockets',
+ 'variations': 'Replica Machined w/ Black Pockets',
+ 'vehicles': ['2018-2022 Toyota Camry'],
+ 'width': '8'}
+2026-01-30 11:45:01 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wheelsamerica.com/product/ford-fusion-2017-2019-18-oem-wheel-rim-2/> (referer: https://wheelsamerica.com/)
+2026-01-30 11:45:01 [wheels_spider] INFO: Parsing wheel detail - URL: https://wheelsamerica.com/product/ford-fusion-2017-2019-18-oem-wheel-rim-2/
+2026-01-30 11:45:01 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wheelsamerica.com/product/ford-fusion-2017-2019-18-oem-wheel-rim-2/>
+{'Int2': '20437-10120',
+ 'bolt_circle': '108',
+ 'condition': 'Refurbished',
+ 'desc2': '18×8  5 lug wheel.  WHEEL ONLY! Does not include center cap, lugs, '
+          'or TPMS sensor.',
+ 'finish': 'Painted',
+ 'indents': ['Ident#: HS7Z1007A',
+             'Ident#: HS7C1007B1A',
+             'Ident#: HS7CB1A',
+             'Ident#: KS7C1007G1A',
+             'Ident#: KS7Z1007C',
+             'Ident#: KS7C1007B1A'],
+ 'interchange': '10120',
+ 'inventory': '8',
+ 'lugs': '5',
+ 'partnumbers': ['Part#: HS7C1007B1A',
+                 'Part#: HS7CB1A',
+                 'Part#: KS7Z1007C',
+                 'Part#: KS7Z1007E',
+                 'Part#: KS7C1007G1A',
+                 'Part#: HS7Z1007A',
+                 'Part#: JS7Z1007A'],
+ 'price': '$226.33',
+ 'sizes': '18',
+ 'spokes': '10',
+ 'title': '2018-2020 Ford Fusion 18″ OEM Wheel Rim Charcoal',
+ 'variations': 'Charcoal',
+ 'vehicles': ['2017-2020 Ford Fusion'],
+ 'width': '8'}
+2026-01-30 11:45:02 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wheelsamerica.com/product/mercedes-benz-s550-2014-2017-20-replica-wheel-rim-2/> (referer: https://wheelsamerica.com/)
+2026-01-30 11:45:02 [wheels_spider] INFO: Parsing wheel detail - URL: https://wheelsamerica.com/product/mercedes-benz-s550-2014-2017-20-replica-wheel-rim-2/
+2026-01-30 11:45:02 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wheelsamerica.com/product/mercedes-benz-s550-2014-2017-20-replica-wheel-rim-2/>
+{'Int2': '20409-85355',
+ 'bolt_circle': '112',
+ 'condition': 'New',
+ 'desc2': '20×9.5  5 lug wheel.  WHEEL ONLY! Does not include center cap, '
+          'lugs, or TPMS sensor.',
+ 'finish': 'Machined',
+ 'indents': ['Ident#: 2224010500',
+             'Ident#: 22240105007X21',
+             'Ident#: 22240100027X45',
+             'Ident#: 22240117027756',
+             'Ident#: 222401050080'],
+ 'interchange': '85355',
+ 'inventory': '74',
+ 'lugs': '5',
+ 'partnumbers': ['Part#: 2224010500',
+                 'Part#: 22240100027X45',
+                 'Part#: 222401050080',
+                 'Part#: 22240105007X21'],
+ 'price': '$357.93',
+ 'sizes': '20',
+ 'spokes': '14',
+ 'title': 'Mercedes-Benz S550 2014-2017 20″ Rear Replica Wheel Machined',
+ 'variations': 'Replica Machined w/ Charcoal Pockets',
+ 'vehicles': ['2015-2016 Mercedes-Benz S400',
+              '2016-2016 Mercedes-Benz S600',
+              '2014-2017 Mercedes-Benz S550',
+              '2014-2018 Mercedes-Benz S Class',
+              '2015-2016 Mercedes-Benz S550e',
+              '2014-2018 Mercedes-Benz CLS550'],
+ 'width': '9.5'}
+2026-01-30 11:45:02 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wheelsamerica.com/product/ford-explorer-2016-2019-20-oem-wheel-rim-4/> (referer: https://wheelsamerica.com/)
+2026-01-30 11:45:02 [wheels_spider] INFO: Parsing wheel detail - URL: https://wheelsamerica.com/product/ford-explorer-2016-2019-20-oem-wheel-rim-4/
+2026-01-30 11:45:02 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wheelsamerica.com/product/ford-explorer-2016-2019-20-oem-wheel-rim-4/>
+{'Int2': '14738-10060',
+ 'bolt_circle': '4.5',
+ 'condition': 'Refurbished',
+ 'desc2': '20×8.5  5 lug wheel.  WHEEL ONLY! Does not include center cap, '
+          'lugs, or TPMS sensor.',
+ 'finish': 'Polished',
+ 'indents': ['Ident#: FB531007BA', 'Ident#: FB53BA', 'Ident#: FB531007BB'],
+ 'interchange': '10060',
+ 'inventory': '7',
+ 'lugs': '5',
+ 'partnumbers': ['Part#: FB5Z1007C', 'Part#: FB531007BB'],
+ 'price': '$265.95',
+ 'sizes': '20',
+ 'spokes': '10',
+ 'title': '2013-2019 Ford Explorer 20″ OEM Wheel Rim Polished',
+ 'variations': 'Polished',
+ 'vehicles': ['2016-2019 Ford Explorer'],
+ 'width': '8.5'}
+2026-01-30 11:45:03 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wheelsamerica.com/product/honda-civic-2017-2020-18-replica-wheel-rim/> (referer: https://wheelsamerica.com/)
+2026-01-30 11:45:03 [wheels_spider] INFO: Parsing wheel detail - URL: https://wheelsamerica.com/product/honda-civic-2017-2020-18-replica-wheel-rim/
+2026-01-30 11:45:03 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wheelsamerica.com/product/honda-civic-2017-2020-18-replica-wheel-rim/>
+{'Int2': '22192-64108',
+ 'bolt_circle': '4.5',
+ 'condition': 'New',
+ 'desc2': '18×8  5 lug wheel.  WHEEL ONLY! Does not include center cap, lugs, '
+          'or TPMS sensor.',
+ 'finish': 'Machined',
+ 'indents': ['Ident#: 42700TGGA71',
+             'Ident#: 42700TBFA91',
+             'Ident#: 42700TGGA72',
+             'Ident#: 42800TBAAC2',
+             'Ident#: TBF18080A'],
+ 'interchange': '64108',
+ 'inventory': '115',
+ 'lugs': '5',
+ 'partnumbers': ['Part#: 42700TGGA72',
+                 'Part#: 42800TBAAC2',
+                 'Part#: 42700TGGA71',
+                 'Part#: 42700TBFA91',
+                 'Part#: 42700TBAAD1'],
+ 'price': '$173.63',
+ 'sizes': '18',
+ 'spokes': '10',
+ 'title': '2021 Honda Civic 18″ Wheel Rim Replica Machined',
+ 'variations': 'Replica Machined',
+ 'vehicles': ['2017-2021 Honda Civic'],
+ 'width': '8'}
+2026-01-30 11:45:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wheelsamerica.com/product/mercedes-benz-s550-2014-2017-20-replica-wheel-rim/> (referer: https://wheelsamerica.com/)
+2026-01-30 11:45:05 [wheels_spider] INFO: Parsing wheel detail - URL: https://wheelsamerica.com/product/mercedes-benz-s550-2014-2017-20-replica-wheel-rim/
+2026-01-30 11:45:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wheelsamerica.com/product/mercedes-benz-s550-2014-2017-20-replica-wheel-rim/>
+{'Int2': '20408-85353',
+ 'bolt_circle': '112',
+ 'condition': 'New',
+ 'desc2': '20×8.5  5 lug wheel.  WHEEL ONLY! Does not include center cap, '
+          'lugs, or TPMS sensor.',
+ 'finish': 'Machined',
+ 'indents': ['Ident#: 2224010400',
+             'Ident#: 22240104007X21',
+             'Ident#: 22240104007X23',
+             'Ident#: 222401040080'],
+ 'interchange': '85353',
+ 'inventory': '101',
+ 'lugs': '5',
+ 'partnumbers': ['Part#: 2224010400',
+                 'Part#: 222401040080',
+                 'Part#: 22240104007X21',
+                 'Part#: 22240104007X23'],
+ 'price': '$299.73',
+ 'sizes': '20',
+ 'spokes': '14',
+ 'title': 'Mercedes-Benz S550 2014-2017 20″ Front Replica Wheel Machined',
+ 'variations': 'Replica Machined w/ Charcoal Pockets',
+ 'vehicles': ['2014-2017 Mercedes-Benz S550',
+              '2015-2016 Mercedes-Benz S400',
+              '2014-2018 Mercedes-Benz S Class',
+              '2018-2019 Mercedes-Benz S450',
+              '2015-2017 Mercedes-Benz S550e',
+              '2015-2019 Mercedes-Benz S65 AMG',
+              '2018-2019 Mercedes-Benz S560',
+              '2015-2017 Mercedes-Benz S600',
+              '2014-2019 Mercedes-Benz S63 AMG'],
+ 'width': '8.5'}
+2026-01-30 11:45:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wheelsamerica.com/product/ford-fusion-2013-2016-19-oem-wheel-rim/> (referer: https://wheelsamerica.com/)
+2026-01-30 11:45:06 [wheels_spider] INFO: Parsing wheel detail - URL: https://wheelsamerica.com/product/ford-fusion-2013-2016-19-oem-wheel-rim/
+2026-01-30 11:45:06 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wheelsamerica.com/product/ford-fusion-2013-2016-19-oem-wheel-rim/>
+{'Int2': '6265-3962',
+ 'bolt_circle': '108',
+ 'condition': 'Refurbished',
+ 'desc2': '19×8  5 lug wheel.  WHEEL ONLY! Does not include center cap, lugs, '
+          'or TPMS sensor.',
+ 'finish': 'Hyper',
+ 'indents': ['Ident#: DS7C1007H1B', 'Ident#: DS7CH1B', 'Ident#: DS701007H1A'],
+ 'interchange': '3962',
+ 'inventory': '27',
+ 'lugs': '5',
+ 'partnumbers': ['Part#: DS7Z1007H'],
+ 'price': '$364.17',
+ 'sizes': '19',
+ 'spokes': '10',
+ 'title': 'Ford Fusion 2013-2016 19″ OEM Wheel',
+ 'variations': 'Hyper Silver',
+ 'vehicles': ['2013-2016 Ford Fusion'],
+ 'width': '8'}
+2026-01-30 11:45:07 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wheelsamerica.com/product/honda-accord-2016-2017-19-oem-wheel-rim-2/> (referer: https://wheelsamerica.com/)
+2026-01-30 11:45:07 [wheels_spider] INFO: Parsing wheel detail - URL: https://wheelsamerica.com/product/honda-accord-2016-2017-19-oem-wheel-rim-2/
+2026-01-30 11:45:07 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wheelsamerica.com/product/honda-accord-2016-2017-19-oem-wheel-rim-2/>
+{'Int2': '18615-64083',
+ 'bolt_circle': '4.5',
+ 'condition': 'Refurbished',
+ 'desc2': '19×8  5 lug wheel.  WHEEL ONLY! Does not include center cap, lugs, '
+          'or TPMS sensor.',
+ 'finish': 'Machined',
+ 'indents': ['Ident#: 42700T2AL92', 'Ident#: T2919080A'],
+ 'interchange': '64083',
+ 'inventory': '21',
+ 'lugs': '5',
+ 'partnumbers': ['Part#: 42700T2AL92'],
+ 'price': '$198.40',
+ 'sizes': '19',
+ 'spokes': '10',
+ 'title': 'Honda ACCORD 2016-2017 19″ OEM Wheel Machined',
+ 'variations': 'Machined w/ Black Pockets',
+ 'vehicles': ['2016-2017 Honda ACCORD'],
+ 'width': '8'}
+2026-01-30 11:45:08 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wheelsamerica.com/product/mercedes-benz-560sl-1986-1989-15-oem-wheel-rim-2/> (referer: https://wheelsamerica.com/)
+2026-01-30 11:45:08 [wheels_spider] INFO: Parsing wheel detail - URL: https://wheelsamerica.com/product/mercedes-benz-560sl-1986-1989-15-oem-wheel-rim-2/
+2026-01-30 11:45:08 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wheelsamerica.com/product/mercedes-benz-560sl-1986-1989-15-oem-wheel-rim-2/>
+{'Int2': '20421-65139',
+ 'bolt_circle': '112',
+ 'condition': 'Refurbished',
+ 'desc2': '15×7  5 lug wheel.  WHEEL ONLY! Does not include center cap, lugs, '
+          'or TPMS sensor.',
+ 'finish': 'Painted',
+ 'indents': ['Ident#: 1264003002', 'Ident#: 1264003402', 'Ident#: 1264003502'],
+ 'interchange': '65139',
+ 'inventory': '4',
+ 'lugs': '5',
+ 'partnumbers': ['Part#: 1264003002', 'Part#: 1264003502'],
+ 'price': '$297.18',
+ 'sizes': '15',
+ 'spokes': '15',
+ 'title': 'Mercedes-Benz 560SL 1986-1989 15″ OEM Wheel All Silver',
+ 'variations': 'All Silver',
+ 'vehicles': ['1986-1989 Mercedes-Benz 560SL',
+              '1986-1987 Mercedes-Benz 300D',
+              '1986-1987 Mercedes-Benz 300SDL',
+              '1987-1987 Mercedes-Benz 420',
+              '1986-1987 Mercedes-Benz 560SEC',
+              '1986-1987 Mercedes-Benz 560SEL',
+              '1986-1989 Mercedes-Benz 560'],
+ 'width': '7'}
+2026-01-30 11:45:09 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wheelsamerica.com/product/mercedes-benz-c300-2008-2014-18-replica-wheel-rim-2/> (referer: https://wheelsamerica.com/)
+2026-01-30 11:45:09 [wheels_spider] INFO: Parsing wheel detail - URL: https://wheelsamerica.com/product/mercedes-benz-c300-2008-2014-18-replica-wheel-rim-2/
+2026-01-30 11:45:09 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wheelsamerica.com/product/mercedes-benz-c300-2008-2014-18-replica-wheel-rim-2/>
+{'Int2': '18674-85058',
+ 'bolt_circle': '112',
+ 'condition': 'New',
+ 'desc2': '18×8  5 lug wheel.  WHEEL ONLY! Does not include center cap, lugs, '
+          'or TPMS sensor.',
+ 'finish': 'Machined',
+ 'indents': ['Ident#: 2044014102',
+             'Ident#: 20440141029700',
+             'Ident#: 20440141027X25',
+             'Ident#: A2044014102'],
+ 'interchange': '85058',
+ 'inventory': '147',
+ 'lugs': '5',
+ 'partnumbers': ['Part#: 20440141027X25',
+                 'Part#: A2044014102',
+                 'Part#: 20440141029700'],
+ 'price': '$290.03',
+ 'sizes': '18',
+ 'spokes': '10',
+ 'title': 'Mercedes-Benz C300 2008-2014 18″ Front Replica Wheel Machined',
+ 'variations': 'Replica Machined w/ Silver Pockets',
+ 'vehicles': ['2008-2015 Mercedes-Benz C350',
+              '2012-2015 Mercedes-Benz C250',
+              '2008-2015 Mercedes-Benz C Class',
+              '2008-2014 Mercedes-Benz C300',
+              '2008-2015 Mercedes-Benz C63 AMG'],
+ 'width': '8'}
+2026-01-30 11:45:09 [scrapy.core.engine] INFO: Closing spider (finished)
+2026-01-30 11:45:09 [scrapy.extensions.feedexport] INFO: Stored csv feed (12 items) in: results.csv
+2026-01-30 11:45:09 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 4804,
+ 'downloader/request_count': 13,
+ 'downloader/request_method_count/GET': 13,
+ 'downloader/response_bytes': 515954,
+ 'downloader/response_count': 13,
+ 'downloader/response_status_count/200': 13,
+ 'elapsed_time_seconds': 16.262847,
+ 'feedexport/success_count/FileFeedStorage': 1,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2026, 1, 30, 6, 45, 9, 814964, tzinfo=datetime.timezone.utc),
+ 'httpcompression/response_bytes': 2152365,
+ 'httpcompression/response_count': 13,
+ 'item_scraped_count': 12,
+ 'items_per_minute': 45.0,
+ 'log_count/DEBUG': 28,
+ 'log_count/INFO': 25,
+ 'log_count/WARNING': 1,
+ 'request_depth_max': 1,
+ 'response_received_count': 13,
+ 'responses_per_minute': 48.75,
+ 'scheduler/dequeued': 13,
+ 'scheduler/dequeued/memory': 13,
+ 'scheduler/enqueued': 13,
+ 'scheduler/enqueued/memory': 13,
+ 'start_time': datetime.datetime(2026, 1, 30, 6, 44, 53, 552117, tzinfo=datetime.timezone.utc)}
+2026-01-30 11:45:09 [scrapy.core.engine] INFO: Spider closed (finished)
+2026-01-30 11:45:37 [scrapy.utils.log] INFO: Scrapy 2.13.4 started (bot: wheelsamerica)
+2026-01-30 11:45:37 [scrapy.utils.log] INFO: Versions:
+{'lxml': '6.0.2',
+ 'libxml2': '2.11.9',
+ 'cssselect': '1.3.0',
+ 'parsel': '1.10.0',
+ 'w3lib': '2.3.1',
+ 'Twisted': '25.5.0',
+ 'Python': '3.14.0 (tags/v3.14.0:ebf955d, Oct  7 2025, 10:15:03) [MSC v.1944 '
+           '64 bit (AMD64)]',
+ 'pyOpenSSL': '25.3.0 (OpenSSL 3.5.4 30 Sep 2025)',
+ 'cryptography': '46.0.3',
+ 'Platform': 'Windows-11-10.0.26200-SP0'}
+2026-01-30 11:45:37 [scrapy.addons] INFO: Enabled addons:
+[]
+2026-01-30 11:45:37 [asyncio] DEBUG: Using selector: SelectSelector
+2026-01-30 11:45:37 [scrapy.utils.log] DEBUG: Using reactor: twisted.internet.asyncioreactor.AsyncioSelectorReactor
+2026-01-30 11:45:37 [scrapy.utils.log] DEBUG: Using asyncio event loop: asyncio.windows_events._WindowsSelectorEventLoop
+2026-01-30 11:45:37 [scrapy.extensions.telnet] INFO: Telnet Password: ee18fc232ee6599c
+2026-01-30 11:45:37 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.feedexport.FeedExporter',
+ 'scrapy.extensions.logstats.LogStats']
+2026-01-30 11:45:37 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'wheelsamerica',
+ 'CONCURRENT_REQUESTS': 8,
+ 'DOWNLOAD_DELAY': 1.0,
+ 'FEED_EXPORT_ENCODING': 'utf-8-sig',
+ 'LOG_FILE': 'spider.log',
+ 'NEWSPIDER_MODULE': 'wheelsamerica.spiders',
+ 'RETRY_HTTP_CODES': [500, 502, 503, 504, 408, 429],
+ 'RETRY_TIMES': 5,
+ 'SPIDER_MODULES': ['wheelsamerica.spiders']}
+2026-01-30 11:45:38 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'wheelsamerica.middlewares.RotateAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2026-01-30 11:45:38 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.start.StartSpiderMiddleware',
+ 'scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2026-01-30 11:45:38 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2026-01-30 11:45:38 [scrapy.core.engine] INFO: Spider opened
+2026-01-30 11:45:38 [py.warnings] WARNING: D:\Scrapy-Playwright\venv\Lib\site-packages\scrapy\core\spidermw.py:433: ScrapyDeprecationWarning: wheelsamerica.spiders.wheels_spider.WheelsSpiderSpider defines the deprecated start_requests() method. start_requests() has been deprecated in favor of a new method, start(), to support asynchronous code execution. start_requests() will stop being called in a future version of Scrapy. If you use Scrapy 2.13 or higher only, replace start_requests() with start(); note that start() is a coroutine (async def). If you need to maintain compatibility with lower Scrapy versions, when overriding start_requests() in a spider class, override start() as well; you can use super() to reuse the inherited start() implementation without copy-pasting. See the release notes of Scrapy 2.13 for details: https://docs.scrapy.org/en/2.13/news.html
+  warn(
+
+2026-01-30 11:45:38 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2026-01-30 11:45:38 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2026-01-30 11:45:39 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wheelsamerica.com/> (referer: None)
+2026-01-30 11:45:39 [wheels_spider] INFO: Scraping page: https://wheelsamerica.com/
+2026-01-30 11:45:39 [wheels_spider] INFO: Found 12 products on this page
+2026-01-30 11:45:39 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wheelsamerica.com/product/jeep-wrangler-1987-1995-15-oem-wheel-rim/> (referer: https://wheelsamerica.com/)
+2026-01-30 11:45:40 [wheels_spider] INFO: Parsing wheel detail - URL: https://wheelsamerica.com/product/jeep-wrangler-1987-1995-15-oem-wheel-rim/
+2026-01-30 11:45:40 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wheelsamerica.com/product/jeep-wrangler-1987-1995-15-oem-wheel-rim/>
+{'Int2': '8826-1512',
+ 'bolt_circle': '4.5',
+ 'condition': 'Refurbished',
+ 'desc2': '15×7  5 lug wheel.  WHEEL ONLY! Does not include center cap, lugs, '
+          'or TPMS sensor.',
+ 'finish': 'Machined',
+ 'indents': [],
+ 'interchange': '1512',
+ 'inventory': '24',
+ 'lugs': '5',
+ 'partnumbers': ['Part#: 52003368'],
+ 'price': '$188.63',
+ 'sizes': '15',
+ 'spokes': '5',
+ 'title': 'Jeep Wrangler 1987-1995 15″ OEM Wheel Machined',
+ 'variations': 'No Variations',
+ 'vehicles': ['1987-1995 Jeep Wrangler',
+              '1987-1990 Jeep Wagoneer',
+              '1987-1993 Jeep Cherokee',
+              '1987-1992 Jeep Comanche'],
+ 'width': '7'}
+2026-01-30 11:45:41 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wheelsamerica.com/product/subaru-impreza-2017-2019-18-oem-wheel-rim-2/> (referer: https://wheelsamerica.com/)
+2026-01-30 11:45:41 [wheels_spider] INFO: Parsing wheel detail - URL: https://wheelsamerica.com/product/subaru-impreza-2017-2019-18-oem-wheel-rim-2/
+2026-01-30 11:45:41 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wheelsamerica.com/product/subaru-impreza-2017-2019-18-oem-wheel-rim-2/>
+{'Int2': '18492-68848',
+ 'bolt_circle': '100',
+ 'condition': 'Refurbished',
+ 'desc2': '18×7.5  5 lug wheel.  WHEEL ONLY! Does not include center cap, '
+          'lugs, or TPMS sensor.',
+ 'finish': 'Machined',
+ 'indents': ['Ident#: 28111FL02A'],
+ 'interchange': '68848',
+ 'inventory': '3',
+ 'lugs': '5',
+ 'partnumbers': ['Part#: 28111FL02A'],
+ 'price': '$286.67',
+ 'sizes': '18',
+ 'spokes': '10',
+ 'title': '2017-2021 Subaru Impreza 18″ OEM Wheel Rim Machined w/ Dark '
+          'Charcoal Pockets',
+ 'variations': 'Machined w/ Dark Charcoal Pockets',
+ 'vehicles': ['2017-2019 Subaru Impreza'],
+ 'width': '7.5'}
+2026-01-30 11:45:42 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wheelsamerica.com/product/toyota-camry-2018-2020-18-replica-wheel-rim/> (referer: https://wheelsamerica.com/)
+2026-01-30 11:45:42 [wheels_spider] INFO: Parsing wheel detail - URL: https://wheelsamerica.com/product/toyota-camry-2018-2020-18-replica-wheel-rim/
+2026-01-30 11:45:42 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wheelsamerica.com/product/toyota-camry-2018-2020-18-replica-wheel-rim/>
+{'Int2': '21075-75221',
+ 'bolt_circle': '4.5',
+ 'condition': 'New',
+ 'desc2': '18×8  5 lug wheel.  WHEEL ONLY! Does not include center cap, lugs, '
+          'or TPMS sensor.',
+ 'finish': 'Machined',
+ 'indents': ['Ident#: 4261106F80',
+             'Ident#: 4261106F90',
+             'Ident#: 4261106E10',
+             'Ident#: 4261106F70',
+             'Ident#: 4261133D10',
+             'Ident#: 4261133D30',
+             'Ident#: BBM'],
+ 'interchange': '75221',
+ 'inventory': '137',
+ 'lugs': '5',
+ 'partnumbers': ['Part#: 4261106J00',
+                 'Part#: 4261106F80',
+                 'Part#: 4261106F90',
+                 'Part#: 4261106E10',
+                 'Part#: 4261106F70',
+                 'Part#: 4261133D10',
+                 'Part#: 4261133D30'],
+ 'price': '$193.03',
+ 'sizes': '18',
+ 'spokes': '20',
+ 'title': '2018-2022 Toyota Camry 18″ Wheel Rim Replica Machined w/ Black '
+          'Pockets',
+ 'variations': 'Replica Machined w/ Black Pockets',
+ 'vehicles': ['2018-2022 Toyota Camry'],
+ 'width': '8'}
+2026-01-30 11:45:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wheelsamerica.com/product/ford-fusion-2017-2019-18-oem-wheel-rim-2/> (referer: https://wheelsamerica.com/)
+2026-01-30 11:45:43 [wheels_spider] INFO: Parsing wheel detail - URL: https://wheelsamerica.com/product/ford-fusion-2017-2019-18-oem-wheel-rim-2/
+2026-01-30 11:45:43 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wheelsamerica.com/product/ford-fusion-2017-2019-18-oem-wheel-rim-2/>
+{'Int2': '20437-10120',
+ 'bolt_circle': '108',
+ 'condition': 'Refurbished',
+ 'desc2': '18×8  5 lug wheel.  WHEEL ONLY! Does not include center cap, lugs, '
+          'or TPMS sensor.',
+ 'finish': 'Painted',
+ 'indents': ['Ident#: HS7Z1007A',
+             'Ident#: HS7C1007B1A',
+             'Ident#: HS7CB1A',
+             'Ident#: KS7C1007G1A',
+             'Ident#: KS7Z1007C',
+             'Ident#: KS7C1007B1A'],
+ 'interchange': '10120',
+ 'inventory': '8',
+ 'lugs': '5',
+ 'partnumbers': ['Part#: HS7C1007B1A',
+                 'Part#: HS7CB1A',
+                 'Part#: KS7Z1007C',
+                 'Part#: KS7Z1007E',
+                 'Part#: KS7C1007G1A',
+                 'Part#: HS7Z1007A',
+                 'Part#: JS7Z1007A'],
+ 'price': '$226.33',
+ 'sizes': '18',
+ 'spokes': '10',
+ 'title': '2018-2020 Ford Fusion 18″ OEM Wheel Rim Charcoal',
+ 'variations': 'Charcoal',
+ 'vehicles': ['2017-2020 Ford Fusion'],
+ 'width': '8'}
+2026-01-30 11:45:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wheelsamerica.com/product/mercedes-benz-s550-2014-2017-20-replica-wheel-rim-2/> (referer: https://wheelsamerica.com/)
+2026-01-30 11:45:46 [wheels_spider] INFO: Parsing wheel detail - URL: https://wheelsamerica.com/product/mercedes-benz-s550-2014-2017-20-replica-wheel-rim-2/
+2026-01-30 11:45:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wheelsamerica.com/product/mercedes-benz-s550-2014-2017-20-replica-wheel-rim-2/>
+{'Int2': '20409-85355',
+ 'bolt_circle': '112',
+ 'condition': 'New',
+ 'desc2': '20×9.5  5 lug wheel.  WHEEL ONLY! Does not include center cap, '
+          'lugs, or TPMS sensor.',
+ 'finish': 'Machined',
+ 'indents': ['Ident#: 2224010500',
+             'Ident#: 22240105007X21',
+             'Ident#: 22240100027X45',
+             'Ident#: 22240117027756',
+             'Ident#: 222401050080'],
+ 'interchange': '85355',
+ 'inventory': '74',
+ 'lugs': '5',
+ 'partnumbers': ['Part#: 2224010500',
+                 'Part#: 22240100027X45',
+                 'Part#: 222401050080',
+                 'Part#: 22240105007X21'],
+ 'price': '$357.93',
+ 'sizes': '20',
+ 'spokes': '14',
+ 'title': 'Mercedes-Benz S550 2014-2017 20″ Rear Replica Wheel Machined',
+ 'variations': 'Replica Machined w/ Charcoal Pockets',
+ 'vehicles': ['2015-2016 Mercedes-Benz S400',
+              '2016-2016 Mercedes-Benz S600',
+              '2014-2017 Mercedes-Benz S550',
+              '2014-2018 Mercedes-Benz S Class',
+              '2015-2016 Mercedes-Benz S550e',
+              '2014-2018 Mercedes-Benz CLS550'],
+ 'width': '9.5'}
+2026-01-30 11:45:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wheelsamerica.com/product/ford-explorer-2016-2019-20-oem-wheel-rim-4/> (referer: https://wheelsamerica.com/)
+2026-01-30 11:45:46 [wheels_spider] INFO: Parsing wheel detail - URL: https://wheelsamerica.com/product/ford-explorer-2016-2019-20-oem-wheel-rim-4/
+2026-01-30 11:45:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wheelsamerica.com/product/ford-explorer-2016-2019-20-oem-wheel-rim-4/>
+{'Int2': '14738-10060',
+ 'bolt_circle': '4.5',
+ 'condition': 'Refurbished',
+ 'desc2': '20×8.5  5 lug wheel.  WHEEL ONLY! Does not include center cap, '
+          'lugs, or TPMS sensor.',
+ 'finish': 'Polished',
+ 'indents': ['Ident#: FB531007BA', 'Ident#: FB53BA', 'Ident#: FB531007BB'],
+ 'interchange': '10060',
+ 'inventory': '7',
+ 'lugs': '5',
+ 'partnumbers': ['Part#: FB5Z1007C', 'Part#: FB531007BB'],
+ 'price': '$265.95',
+ 'sizes': '20',
+ 'spokes': '10',
+ 'title': '2013-2019 Ford Explorer 20″ OEM Wheel Rim Polished',
+ 'variations': 'Polished',
+ 'vehicles': ['2016-2019 Ford Explorer'],
+ 'width': '8.5'}
+2026-01-30 11:45:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wheelsamerica.com/product/mercedes-benz-s550-2014-2017-20-replica-wheel-rim/> (referer: https://wheelsamerica.com/)
+2026-01-30 11:45:48 [wheels_spider] INFO: Parsing wheel detail - URL: https://wheelsamerica.com/product/mercedes-benz-s550-2014-2017-20-replica-wheel-rim/
+2026-01-30 11:45:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wheelsamerica.com/product/mercedes-benz-s550-2014-2017-20-replica-wheel-rim/>
+{'Int2': '20408-85353',
+ 'bolt_circle': '112',
+ 'condition': 'New',
+ 'desc2': '20×8.5  5 lug wheel.  WHEEL ONLY! Does not include center cap, '
+          'lugs, or TPMS sensor.',
+ 'finish': 'Machined',
+ 'indents': ['Ident#: 2224010400',
+             'Ident#: 22240104007X21',
+             'Ident#: 22240104007X23',
+             'Ident#: 222401040080'],
+ 'interchange': '85353',
+ 'inventory': '101',
+ 'lugs': '5',
+ 'partnumbers': ['Part#: 2224010400',
+                 'Part#: 222401040080',
+                 'Part#: 22240104007X21',
+                 'Part#: 22240104007X23'],
+ 'price': '$299.73',
+ 'sizes': '20',
+ 'spokes': '14',
+ 'title': 'Mercedes-Benz S550 2014-2017 20″ Front Replica Wheel Machined',
+ 'variations': 'Replica Machined w/ Charcoal Pockets',
+ 'vehicles': ['2014-2017 Mercedes-Benz S550',
+              '2015-2016 Mercedes-Benz S400',
+              '2014-2018 Mercedes-Benz S Class',
+              '2018-2019 Mercedes-Benz S450',
+              '2015-2017 Mercedes-Benz S550e',
+              '2015-2019 Mercedes-Benz S65 AMG',
+              '2018-2019 Mercedes-Benz S560',
+              '2015-2017 Mercedes-Benz S600',
+              '2014-2019 Mercedes-Benz S63 AMG'],
+ 'width': '8.5'}
+2026-01-30 11:45:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wheelsamerica.com/product/honda-civic-2017-2020-18-replica-wheel-rim/> (referer: https://wheelsamerica.com/)
+2026-01-30 11:45:48 [wheels_spider] INFO: Parsing wheel detail - URL: https://wheelsamerica.com/product/honda-civic-2017-2020-18-replica-wheel-rim/
+2026-01-30 11:45:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wheelsamerica.com/product/honda-civic-2017-2020-18-replica-wheel-rim/>
+{'Int2': '22192-64108',
+ 'bolt_circle': '4.5',
+ 'condition': 'New',
+ 'desc2': '18×8  5 lug wheel.  WHEEL ONLY! Does not include center cap, lugs, '
+          'or TPMS sensor.',
+ 'finish': 'Machined',
+ 'indents': ['Ident#: 42700TGGA71',
+             'Ident#: 42700TBFA91',
+             'Ident#: 42700TGGA72',
+             'Ident#: 42800TBAAC2',
+             'Ident#: TBF18080A'],
+ 'interchange': '64108',
+ 'inventory': '115',
+ 'lugs': '5',
+ 'partnumbers': ['Part#: 42700TGGA72',
+                 'Part#: 42800TBAAC2',
+                 'Part#: 42700TGGA71',
+                 'Part#: 42700TBFA91',
+                 'Part#: 42700TBAAD1'],
+ 'price': '$173.63',
+ 'sizes': '18',
+ 'spokes': '10',
+ 'title': '2021 Honda Civic 18″ Wheel Rim Replica Machined',
+ 'variations': 'Replica Machined',
+ 'vehicles': ['2017-2021 Honda Civic'],
+ 'width': '8'}
+2026-01-30 11:45:49 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wheelsamerica.com/product/ford-fusion-2013-2016-19-oem-wheel-rim/> (referer: https://wheelsamerica.com/)
+2026-01-30 11:45:49 [wheels_spider] INFO: Parsing wheel detail - URL: https://wheelsamerica.com/product/ford-fusion-2013-2016-19-oem-wheel-rim/
+2026-01-30 11:45:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wheelsamerica.com/product/ford-fusion-2013-2016-19-oem-wheel-rim/>
+{'Int2': '6265-3962',
+ 'bolt_circle': '108',
+ 'condition': 'Refurbished',
+ 'desc2': '19×8  5 lug wheel.  WHEEL ONLY! Does not include center cap, lugs, '
+          'or TPMS sensor.',
+ 'finish': 'Hyper',
+ 'indents': ['Ident#: DS7C1007H1B', 'Ident#: DS7CH1B', 'Ident#: DS701007H1A'],
+ 'interchange': '3962',
+ 'inventory': '27',
+ 'lugs': '5',
+ 'partnumbers': ['Part#: DS7Z1007H'],
+ 'price': '$364.17',
+ 'sizes': '19',
+ 'spokes': '10',
+ 'title': 'Ford Fusion 2013-2016 19″ OEM Wheel',
+ 'variations': 'Hyper Silver',
+ 'vehicles': ['2013-2016 Ford Fusion'],
+ 'width': '8'}
+2026-01-30 11:45:50 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wheelsamerica.com/product/honda-accord-2016-2017-19-oem-wheel-rim-2/> (referer: https://wheelsamerica.com/)
+2026-01-30 11:45:51 [wheels_spider] INFO: Parsing wheel detail - URL: https://wheelsamerica.com/product/honda-accord-2016-2017-19-oem-wheel-rim-2/
+2026-01-30 11:45:51 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wheelsamerica.com/product/honda-accord-2016-2017-19-oem-wheel-rim-2/>
+{'Int2': '18615-64083',
+ 'bolt_circle': '4.5',
+ 'condition': 'Refurbished',
+ 'desc2': '19×8  5 lug wheel.  WHEEL ONLY! Does not include center cap, lugs, '
+          'or TPMS sensor.',
+ 'finish': 'Machined',
+ 'indents': ['Ident#: 42700T2AL92', 'Ident#: T2919080A'],
+ 'interchange': '64083',
+ 'inventory': '21',
+ 'lugs': '5',
+ 'partnumbers': ['Part#: 42700T2AL92'],
+ 'price': '$198.40',
+ 'sizes': '19',
+ 'spokes': '10',
+ 'title': 'Honda ACCORD 2016-2017 19″ OEM Wheel Machined',
+ 'variations': 'Machined w/ Black Pockets',
+ 'vehicles': ['2016-2017 Honda ACCORD'],
+ 'width': '8'}
+2026-01-30 11:45:53 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wheelsamerica.com/product/mercedes-benz-c300-2008-2014-18-replica-wheel-rim-2/> (referer: https://wheelsamerica.com/)
+2026-01-30 11:45:53 [wheels_spider] INFO: Parsing wheel detail - URL: https://wheelsamerica.com/product/mercedes-benz-c300-2008-2014-18-replica-wheel-rim-2/
+2026-01-30 11:45:53 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wheelsamerica.com/product/mercedes-benz-c300-2008-2014-18-replica-wheel-rim-2/>
+{'Int2': '18674-85058',
+ 'bolt_circle': '112',
+ 'condition': 'New',
+ 'desc2': '18×8  5 lug wheel.  WHEEL ONLY! Does not include center cap, lugs, '
+          'or TPMS sensor.',
+ 'finish': 'Machined',
+ 'indents': ['Ident#: 2044014102',
+             'Ident#: 20440141029700',
+             'Ident#: 20440141027X25',
+             'Ident#: A2044014102'],
+ 'interchange': '85058',
+ 'inventory': '147',
+ 'lugs': '5',
+ 'partnumbers': ['Part#: 20440141027X25',
+                 'Part#: A2044014102',
+                 'Part#: 20440141029700'],
+ 'price': '$290.03',
+ 'sizes': '18',
+ 'spokes': '10',
+ 'title': 'Mercedes-Benz C300 2008-2014 18″ Front Replica Wheel Machined',
+ 'variations': 'Replica Machined w/ Silver Pockets',
+ 'vehicles': ['2008-2015 Mercedes-Benz C350',
+              '2012-2015 Mercedes-Benz C250',
+              '2008-2015 Mercedes-Benz C Class',
+              '2008-2014 Mercedes-Benz C300',
+              '2008-2015 Mercedes-Benz C63 AMG'],
+ 'width': '8'}
+2026-01-30 11:45:53 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wheelsamerica.com/product/mercedes-benz-560sl-1986-1989-15-oem-wheel-rim-2/> (referer: https://wheelsamerica.com/)
+2026-01-30 11:45:54 [wheels_spider] INFO: Parsing wheel detail - URL: https://wheelsamerica.com/product/mercedes-benz-560sl-1986-1989-15-oem-wheel-rim-2/
+2026-01-30 11:45:54 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wheelsamerica.com/product/mercedes-benz-560sl-1986-1989-15-oem-wheel-rim-2/>
+{'Int2': '20421-65139',
+ 'bolt_circle': '112',
+ 'condition': 'Refurbished',
+ 'desc2': '15×7  5 lug wheel.  WHEEL ONLY! Does not include center cap, lugs, '
+          'or TPMS sensor.',
+ 'finish': 'Painted',
+ 'indents': ['Ident#: 1264003002', 'Ident#: 1264003402', 'Ident#: 1264003502'],
+ 'interchange': '65139',
+ 'inventory': '4',
+ 'lugs': '5',
+ 'partnumbers': ['Part#: 1264003002', 'Part#: 1264003502'],
+ 'price': '$297.18',
+ 'sizes': '15',
+ 'spokes': '15',
+ 'title': 'Mercedes-Benz 560SL 1986-1989 15″ OEM Wheel All Silver',
+ 'variations': 'All Silver',
+ 'vehicles': ['1986-1989 Mercedes-Benz 560SL',
+              '1986-1987 Mercedes-Benz 300D',
+              '1986-1987 Mercedes-Benz 300SDL',
+              '1987-1987 Mercedes-Benz 420',
+              '1986-1987 Mercedes-Benz 560SEC',
+              '1986-1987 Mercedes-Benz 560SEL',
+              '1986-1989 Mercedes-Benz 560'],
+ 'width': '7'}
+2026-01-30 11:45:54 [scrapy.core.engine] INFO: Closing spider (finished)
+2026-01-30 11:45:54 [scrapy.extensions.feedexport] INFO: Stored csv feed (12 items) in: results.csv
+2026-01-30 11:45:54 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 4908,
+ 'downloader/request_count': 13,
+ 'downloader/request_method_count/GET': 13,
+ 'downloader/response_bytes': 515925,
+ 'downloader/response_count': 13,
+ 'downloader/response_status_count/200': 13,
+ 'elapsed_time_seconds': 15.816914,
+ 'feedexport/success_count/FileFeedStorage': 1,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2026, 1, 30, 6, 45, 54, 106455, tzinfo=datetime.timezone.utc),
+ 'httpcompression/response_bytes': 2147987,
+ 'httpcompression/response_count': 13,
+ 'item_scraped_count': 12,
+ 'items_per_minute': 48.0,
+ 'log_count/DEBUG': 28,
+ 'log_count/INFO': 25,
+ 'log_count/WARNING': 1,
+ 'request_depth_max': 1,
+ 'response_received_count': 13,
+ 'responses_per_minute': 52.0,
+ 'scheduler/dequeued': 13,
+ 'scheduler/dequeued/memory': 13,
+ 'scheduler/enqueued': 13,
+ 'scheduler/enqueued/memory': 13,
+ 'start_time': datetime.datetime(2026, 1, 30, 6, 45, 38, 289541, tzinfo=datetime.timezone.utc)}
+2026-01-30 11:45:54 [scrapy.core.engine] INFO: Spider closed (finished)
+2026-01-30 11:46:45 [scrapy.utils.log] INFO: Scrapy 2.13.4 started (bot: wheelsamerica)
+2026-01-30 11:46:45 [scrapy.utils.log] INFO: Versions:
+{'lxml': '6.0.2',
+ 'libxml2': '2.11.9',
+ 'cssselect': '1.3.0',
+ 'parsel': '1.10.0',
+ 'w3lib': '2.3.1',
+ 'Twisted': '25.5.0',
+ 'Python': '3.14.0 (tags/v3.14.0:ebf955d, Oct  7 2025, 10:15:03) [MSC v.1944 '
+           '64 bit (AMD64)]',
+ 'pyOpenSSL': '25.3.0 (OpenSSL 3.5.4 30 Sep 2025)',
+ 'cryptography': '46.0.3',
+ 'Platform': 'Windows-11-10.0.26200-SP0'}
+2026-01-30 11:46:45 [scrapy.addons] INFO: Enabled addons:
+[]
+2026-01-30 11:46:45 [asyncio] DEBUG: Using selector: SelectSelector
+2026-01-30 11:46:45 [scrapy.utils.log] DEBUG: Using reactor: twisted.internet.asyncioreactor.AsyncioSelectorReactor
+2026-01-30 11:46:45 [scrapy.utils.log] DEBUG: Using asyncio event loop: asyncio.windows_events._WindowsSelectorEventLoop
+2026-01-30 11:46:45 [scrapy.extensions.telnet] INFO: Telnet Password: ef7a2a54575fcbde
+2026-01-30 11:46:45 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.feedexport.FeedExporter',
+ 'scrapy.extensions.logstats.LogStats']
+2026-01-30 11:46:45 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'wheelsamerica',
+ 'CONCURRENT_REQUESTS': 8,
+ 'DOWNLOAD_DELAY': 1.0,
+ 'FEED_EXPORT_ENCODING': 'utf-8-sig',
+ 'LOG_FILE': 'spider.log',
+ 'NEWSPIDER_MODULE': 'wheelsamerica.spiders',
+ 'RETRY_HTTP_CODES': [500, 502, 503, 504, 408, 429],
+ 'RETRY_TIMES': 5,
+ 'SPIDER_MODULES': ['wheelsamerica.spiders']}
+2026-01-30 11:46:45 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'wheelsamerica.middlewares.RotateAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2026-01-30 11:46:45 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.start.StartSpiderMiddleware',
+ 'scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2026-01-30 11:46:45 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2026-01-30 11:46:45 [scrapy.core.engine] INFO: Spider opened
+2026-01-30 11:46:45 [py.warnings] WARNING: D:\Scrapy-Playwright\venv\Lib\site-packages\scrapy\core\spidermw.py:433: ScrapyDeprecationWarning: wheelsamerica.spiders.wheels_spider.WheelsSpiderSpider defines the deprecated start_requests() method. start_requests() has been deprecated in favor of a new method, start(), to support asynchronous code execution. start_requests() will stop being called in a future version of Scrapy. If you use Scrapy 2.13 or higher only, replace start_requests() with start(); note that start() is a coroutine (async def). If you need to maintain compatibility with lower Scrapy versions, when overriding start_requests() in a spider class, override start() as well; you can use super() to reuse the inherited start() implementation without copy-pasting. See the release notes of Scrapy 2.13 for details: https://docs.scrapy.org/en/2.13/news.html
+  warn(
+
+2026-01-30 11:46:45 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2026-01-30 11:46:45 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2026-01-30 11:46:47 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wheelsamerica.com/> (referer: None)
+2026-01-30 11:46:47 [wheels_spider] INFO: Scraping page: https://wheelsamerica.com/
+2026-01-30 11:46:47 [wheels_spider] INFO: Found 12 products on this page
+2026-01-30 11:46:47 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wheelsamerica.com/product/jeep-wrangler-1987-1995-15-oem-wheel-rim/> (referer: https://wheelsamerica.com/)
+2026-01-30 11:46:48 [wheels_spider] INFO: Parsing wheel detail - URL: https://wheelsamerica.com/product/jeep-wrangler-1987-1995-15-oem-wheel-rim/
+2026-01-30 11:46:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wheelsamerica.com/product/jeep-wrangler-1987-1995-15-oem-wheel-rim/>
+{'Int2': '8826-1512',
+ 'bolt_circle': '4.5',
+ 'condition': 'Refurbished',
+ 'desc2': '15×7  5 lug wheel.  WHEEL ONLY! Does not include center cap, lugs, '
+          'or TPMS sensor.',
+ 'finish': 'Machined',
+ 'indents': [],
+ 'interchange': '1512',
+ 'inventory': '24',
+ 'lugs': '5',
+ 'partnumbers': ['Part#: 52003368'],
+ 'price': '$188.63',
+ 'sizes': '15',
+ 'spokes': '5',
+ 'title': 'Jeep Wrangler 1987-1995 15″ OEM Wheel Machined',
+ 'variations': 'No Variations',
+ 'vehicles': ['1987-1995 Jeep Wrangler',
+              '1987-1990 Jeep Wagoneer',
+              '1987-1993 Jeep Cherokee',
+              '1987-1992 Jeep Comanche'],
+ 'width': '7'}
+2026-01-30 11:46:49 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wheelsamerica.com/product/subaru-impreza-2017-2019-18-oem-wheel-rim-2/> (referer: https://wheelsamerica.com/)
+2026-01-30 11:46:49 [wheels_spider] INFO: Parsing wheel detail - URL: https://wheelsamerica.com/product/subaru-impreza-2017-2019-18-oem-wheel-rim-2/
+2026-01-30 11:46:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wheelsamerica.com/product/subaru-impreza-2017-2019-18-oem-wheel-rim-2/>
+{'Int2': '18492-68848',
+ 'bolt_circle': '100',
+ 'condition': 'Refurbished',
+ 'desc2': '18×7.5  5 lug wheel.  WHEEL ONLY! Does not include center cap, '
+          'lugs, or TPMS sensor.',
+ 'finish': 'Machined',
+ 'indents': ['Ident#: 28111FL02A'],
+ 'interchange': '68848',
+ 'inventory': '3',
+ 'lugs': '5',
+ 'partnumbers': ['Part#: 28111FL02A'],
+ 'price': '$286.67',
+ 'sizes': '18',
+ 'spokes': '10',
+ 'title': '2017-2021 Subaru Impreza 18″ OEM Wheel Rim Machined w/ Dark '
+          'Charcoal Pockets',
+ 'variations': 'Machined w/ Dark Charcoal Pockets',
+ 'vehicles': ['2017-2019 Subaru Impreza'],
+ 'width': '7.5'}
+2026-01-30 11:46:50 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wheelsamerica.com/product/toyota-camry-2018-2020-18-replica-wheel-rim/> (referer: https://wheelsamerica.com/)
+2026-01-30 11:46:50 [wheels_spider] INFO: Parsing wheel detail - URL: https://wheelsamerica.com/product/toyota-camry-2018-2020-18-replica-wheel-rim/
+2026-01-30 11:46:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wheelsamerica.com/product/toyota-camry-2018-2020-18-replica-wheel-rim/>
+{'Int2': '21075-75221',
+ 'bolt_circle': '4.5',
+ 'condition': 'New',
+ 'desc2': '18×8  5 lug wheel.  WHEEL ONLY! Does not include center cap, lugs, '
+          'or TPMS sensor.',
+ 'finish': 'Machined',
+ 'indents': ['Ident#: 4261106F80',
+             'Ident#: 4261106F90',
+             'Ident#: 4261106E10',
+             'Ident#: 4261106F70',
+             'Ident#: 4261133D10',
+             'Ident#: 4261133D30',
+             'Ident#: BBM'],
+ 'interchange': '75221',
+ 'inventory': '137',
+ 'lugs': '5',
+ 'partnumbers': ['Part#: 4261106J00',
+                 'Part#: 4261106F80',
+                 'Part#: 4261106F90',
+                 'Part#: 4261106E10',
+                 'Part#: 4261106F70',
+                 'Part#: 4261133D10',
+                 'Part#: 4261133D30'],
+ 'price': '$193.03',
+ 'sizes': '18',
+ 'spokes': '20',
+ 'title': '2018-2022 Toyota Camry 18″ Wheel Rim Replica Machined w/ Black '
+          'Pockets',
+ 'variations': 'Replica Machined w/ Black Pockets',
+ 'vehicles': ['2018-2022 Toyota Camry'],
+ 'width': '8'}
+2026-01-30 11:46:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wheelsamerica.com/product/ford-fusion-2017-2019-18-oem-wheel-rim-2/> (referer: https://wheelsamerica.com/)
+2026-01-30 11:46:51 [wheels_spider] INFO: Parsing wheel detail - URL: https://wheelsamerica.com/product/ford-fusion-2017-2019-18-oem-wheel-rim-2/
+2026-01-30 11:46:51 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wheelsamerica.com/product/ford-fusion-2017-2019-18-oem-wheel-rim-2/>
+{'Int2': '20437-10120',
+ 'bolt_circle': '108',
+ 'condition': 'Refurbished',
+ 'desc2': '18×8  5 lug wheel.  WHEEL ONLY! Does not include center cap, lugs, '
+          'or TPMS sensor.',
+ 'finish': 'Painted',
+ 'indents': ['Ident#: HS7Z1007A',
+             'Ident#: HS7C1007B1A',
+             'Ident#: HS7CB1A',
+             'Ident#: KS7C1007G1A',
+             'Ident#: KS7Z1007C',
+             'Ident#: KS7C1007B1A'],
+ 'interchange': '10120',
+ 'inventory': '8',
+ 'lugs': '5',
+ 'partnumbers': ['Part#: HS7C1007B1A',
+                 'Part#: HS7CB1A',
+                 'Part#: KS7Z1007C',
+                 'Part#: KS7Z1007E',
+                 'Part#: KS7C1007G1A',
+                 'Part#: HS7Z1007A',
+                 'Part#: JS7Z1007A'],
+ 'price': '$226.33',
+ 'sizes': '18',
+ 'spokes': '10',
+ 'title': '2018-2020 Ford Fusion 18″ OEM Wheel Rim Charcoal',
+ 'variations': 'Charcoal',
+ 'vehicles': ['2017-2020 Ford Fusion'],
+ 'width': '8'}
+2026-01-30 11:46:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wheelsamerica.com/product/mercedes-benz-s550-2014-2017-20-replica-wheel-rim-2/> (referer: https://wheelsamerica.com/)
+2026-01-30 11:46:52 [wheels_spider] INFO: Parsing wheel detail - URL: https://wheelsamerica.com/product/mercedes-benz-s550-2014-2017-20-replica-wheel-rim-2/
+2026-01-30 11:46:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wheelsamerica.com/product/mercedes-benz-s550-2014-2017-20-replica-wheel-rim-2/>
+{'Int2': '20409-85355',
+ 'bolt_circle': '112',
+ 'condition': 'New',
+ 'desc2': '20×9.5  5 lug wheel.  WHEEL ONLY! Does not include center cap, '
+          'lugs, or TPMS sensor.',
+ 'finish': 'Machined',
+ 'indents': ['Ident#: 2224010500',
+             'Ident#: 22240105007X21',
+             'Ident#: 22240100027X45',
+             'Ident#: 22240117027756',
+             'Ident#: 222401050080'],
+ 'interchange': '85355',
+ 'inventory': '74',
+ 'lugs': '5',
+ 'partnumbers': ['Part#: 2224010500',
+                 'Part#: 22240100027X45',
+                 'Part#: 222401050080',
+                 'Part#: 22240105007X21'],
+ 'price': '$357.93',
+ 'sizes': '20',
+ 'spokes': '14',
+ 'title': 'Mercedes-Benz S550 2014-2017 20″ Rear Replica Wheel Machined',
+ 'variations': 'Replica Machined w/ Charcoal Pockets',
+ 'vehicles': ['2015-2016 Mercedes-Benz S400',
+              '2016-2016 Mercedes-Benz S600',
+              '2014-2017 Mercedes-Benz S550',
+              '2014-2018 Mercedes-Benz S Class',
+              '2015-2016 Mercedes-Benz S550e',
+              '2014-2018 Mercedes-Benz CLS550'],
+ 'width': '9.5'}
+2026-01-30 11:46:53 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wheelsamerica.com/product/ford-explorer-2016-2019-20-oem-wheel-rim-4/> (referer: https://wheelsamerica.com/)
+2026-01-30 11:46:53 [wheels_spider] INFO: Parsing wheel detail - URL: https://wheelsamerica.com/product/ford-explorer-2016-2019-20-oem-wheel-rim-4/
+2026-01-30 11:46:54 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wheelsamerica.com/product/ford-explorer-2016-2019-20-oem-wheel-rim-4/>
+{'Int2': '14738-10060',
+ 'bolt_circle': '4.5',
+ 'condition': 'Refurbished',
+ 'desc2': '20×8.5  5 lug wheel.  WHEEL ONLY! Does not include center cap, '
+          'lugs, or TPMS sensor.',
+ 'finish': 'Polished',
+ 'indents': ['Ident#: FB531007BA', 'Ident#: FB53BA', 'Ident#: FB531007BB'],
+ 'interchange': '10060',
+ 'inventory': '7',
+ 'lugs': '5',
+ 'partnumbers': ['Part#: FB5Z1007C', 'Part#: FB531007BB'],
+ 'price': '$265.95',
+ 'sizes': '20',
+ 'spokes': '10',
+ 'title': '2013-2019 Ford Explorer 20″ OEM Wheel Rim Polished',
+ 'variations': 'Polished',
+ 'vehicles': ['2016-2019 Ford Explorer'],
+ 'width': '8.5'}
+2026-01-30 11:46:55 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wheelsamerica.com/product/honda-civic-2017-2020-18-replica-wheel-rim/> (referer: https://wheelsamerica.com/)
+2026-01-30 11:46:55 [wheels_spider] INFO: Parsing wheel detail - URL: https://wheelsamerica.com/product/honda-civic-2017-2020-18-replica-wheel-rim/
+2026-01-30 11:46:55 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wheelsamerica.com/product/honda-civic-2017-2020-18-replica-wheel-rim/>
+{'Int2': '22192-64108',
+ 'bolt_circle': '4.5',
+ 'condition': 'New',
+ 'desc2': '18×8  5 lug wheel.  WHEEL ONLY! Does not include center cap, lugs, '
+          'or TPMS sensor.',
+ 'finish': 'Machined',
+ 'indents': ['Ident#: 42700TGGA71',
+             'Ident#: 42700TBFA91',
+             'Ident#: 42700TGGA72',
+             'Ident#: 42800TBAAC2',
+             'Ident#: TBF18080A'],
+ 'interchange': '64108',
+ 'inventory': '115',
+ 'lugs': '5',
+ 'partnumbers': ['Part#: 42700TGGA72',
+                 'Part#: 42800TBAAC2',
+                 'Part#: 42700TGGA71',
+                 'Part#: 42700TBFA91',
+                 'Part#: 42700TBAAD1'],
+ 'price': '$173.63',
+ 'sizes': '18',
+ 'spokes': '10',
+ 'title': '2021 Honda Civic 18″ Wheel Rim Replica Machined',
+ 'variations': 'Replica Machined',
+ 'vehicles': ['2017-2021 Honda Civic'],
+ 'width': '8'}
+2026-01-30 11:46:56 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wheelsamerica.com/product/mercedes-benz-s550-2014-2017-20-replica-wheel-rim/> (referer: https://wheelsamerica.com/)
+2026-01-30 11:46:56 [wheels_spider] INFO: Parsing wheel detail - URL: https://wheelsamerica.com/product/mercedes-benz-s550-2014-2017-20-replica-wheel-rim/
+2026-01-30 11:46:56 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wheelsamerica.com/product/mercedes-benz-s550-2014-2017-20-replica-wheel-rim/>
+{'Int2': '20408-85353',
+ 'bolt_circle': '112',
+ 'condition': 'New',
+ 'desc2': '20×8.5  5 lug wheel.  WHEEL ONLY! Does not include center cap, '
+          'lugs, or TPMS sensor.',
+ 'finish': 'Machined',
+ 'indents': ['Ident#: 2224010400',
+             'Ident#: 22240104007X21',
+             'Ident#: 22240104007X23',
+             'Ident#: 222401040080'],
+ 'interchange': '85353',
+ 'inventory': '101',
+ 'lugs': '5',
+ 'partnumbers': ['Part#: 2224010400',
+                 'Part#: 222401040080',
+                 'Part#: 22240104007X21',
+                 'Part#: 22240104007X23'],
+ 'price': '$299.73',
+ 'sizes': '20',
+ 'spokes': '14',
+ 'title': 'Mercedes-Benz S550 2014-2017 20″ Front Replica Wheel Machined',
+ 'variations': 'Replica Machined w/ Charcoal Pockets',
+ 'vehicles': ['2014-2017 Mercedes-Benz S550',
+              '2015-2016 Mercedes-Benz S400',
+              '2014-2018 Mercedes-Benz S Class',
+              '2018-2019 Mercedes-Benz S450',
+              '2015-2017 Mercedes-Benz S550e',
+              '2015-2019 Mercedes-Benz S65 AMG',
+              '2018-2019 Mercedes-Benz S560',
+              '2015-2017 Mercedes-Benz S600',
+              '2014-2019 Mercedes-Benz S63 AMG'],
+ 'width': '8.5'}
+2026-01-30 11:46:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wheelsamerica.com/product/ford-fusion-2013-2016-19-oem-wheel-rim/> (referer: https://wheelsamerica.com/)
+2026-01-30 11:46:58 [wheels_spider] INFO: Parsing wheel detail - URL: https://wheelsamerica.com/product/ford-fusion-2013-2016-19-oem-wheel-rim/
+2026-01-30 11:46:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wheelsamerica.com/product/ford-fusion-2013-2016-19-oem-wheel-rim/>
+{'Int2': '6265-3962',
+ 'bolt_circle': '108',
+ 'condition': 'Refurbished',
+ 'desc2': '19×8  5 lug wheel.  WHEEL ONLY! Does not include center cap, lugs, '
+          'or TPMS sensor.',
+ 'finish': 'Hyper',
+ 'indents': ['Ident#: DS7C1007H1B', 'Ident#: DS7CH1B', 'Ident#: DS701007H1A'],
+ 'interchange': '3962',
+ 'inventory': '27',
+ 'lugs': '5',
+ 'partnumbers': ['Part#: DS7Z1007H'],
+ 'price': '$364.17',
+ 'sizes': '19',
+ 'spokes': '10',
+ 'title': 'Ford Fusion 2013-2016 19″ OEM Wheel',
+ 'variations': 'Hyper Silver',
+ 'vehicles': ['2013-2016 Ford Fusion'],
+ 'width': '8'}
+2026-01-30 11:46:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wheelsamerica.com/product/honda-accord-2016-2017-19-oem-wheel-rim-2/> (referer: https://wheelsamerica.com/)
+2026-01-30 11:46:58 [wheels_spider] INFO: Parsing wheel detail - URL: https://wheelsamerica.com/product/honda-accord-2016-2017-19-oem-wheel-rim-2/
+2026-01-30 11:46:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wheelsamerica.com/product/honda-accord-2016-2017-19-oem-wheel-rim-2/>
+{'Int2': '18615-64083',
+ 'bolt_circle': '4.5',
+ 'condition': 'Refurbished',
+ 'desc2': '19×8  5 lug wheel.  WHEEL ONLY! Does not include center cap, lugs, '
+          'or TPMS sensor.',
+ 'finish': 'Machined',
+ 'indents': ['Ident#: 42700T2AL92', 'Ident#: T2919080A'],
+ 'interchange': '64083',
+ 'inventory': '21',
+ 'lugs': '5',
+ 'partnumbers': ['Part#: 42700T2AL92'],
+ 'price': '$198.40',
+ 'sizes': '19',
+ 'spokes': '10',
+ 'title': 'Honda ACCORD 2016-2017 19″ OEM Wheel Machined',
+ 'variations': 'Machined w/ Black Pockets',
+ 'vehicles': ['2016-2017 Honda ACCORD'],
+ 'width': '8'}
+2026-01-30 11:46:59 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wheelsamerica.com/product/mercedes-benz-560sl-1986-1989-15-oem-wheel-rim-2/> (referer: https://wheelsamerica.com/)
+2026-01-30 11:46:59 [wheels_spider] INFO: Parsing wheel detail - URL: https://wheelsamerica.com/product/mercedes-benz-560sl-1986-1989-15-oem-wheel-rim-2/
+2026-01-30 11:46:59 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wheelsamerica.com/product/mercedes-benz-560sl-1986-1989-15-oem-wheel-rim-2/>
+{'Int2': '20421-65139',
+ 'bolt_circle': '112',
+ 'condition': 'Refurbished',
+ 'desc2': '15×7  5 lug wheel.  WHEEL ONLY! Does not include center cap, lugs, '
+          'or TPMS sensor.',
+ 'finish': 'Painted',
+ 'indents': ['Ident#: 1264003002', 'Ident#: 1264003402', 'Ident#: 1264003502'],
+ 'interchange': '65139',
+ 'inventory': '4',
+ 'lugs': '5',
+ 'partnumbers': ['Part#: 1264003002', 'Part#: 1264003502'],
+ 'price': '$297.18',
+ 'sizes': '15',
+ 'spokes': '15',
+ 'title': 'Mercedes-Benz 560SL 1986-1989 15″ OEM Wheel All Silver',
+ 'variations': 'All Silver',
+ 'vehicles': ['1986-1989 Mercedes-Benz 560SL',
+              '1986-1987 Mercedes-Benz 300D',
+              '1986-1987 Mercedes-Benz 300SDL',
+              '1987-1987 Mercedes-Benz 420',
+              '1986-1987 Mercedes-Benz 560SEC',
+              '1986-1987 Mercedes-Benz 560SEL',
+              '1986-1989 Mercedes-Benz 560'],
+ 'width': '7'}
+2026-01-30 11:47:01 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wheelsamerica.com/product/mercedes-benz-c300-2008-2014-18-replica-wheel-rim-2/> (referer: https://wheelsamerica.com/)
+2026-01-30 11:47:01 [wheels_spider] INFO: Parsing wheel detail - URL: https://wheelsamerica.com/product/mercedes-benz-c300-2008-2014-18-replica-wheel-rim-2/
+2026-01-30 11:47:01 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wheelsamerica.com/product/mercedes-benz-c300-2008-2014-18-replica-wheel-rim-2/>
+{'Int2': '18674-85058',
+ 'bolt_circle': '112',
+ 'condition': 'New',
+ 'desc2': '18×8  5 lug wheel.  WHEEL ONLY! Does not include center cap, lugs, '
+          'or TPMS sensor.',
+ 'finish': 'Machined',
+ 'indents': ['Ident#: 2044014102',
+             'Ident#: 20440141029700',
+             'Ident#: 20440141027X25',
+             'Ident#: A2044014102'],
+ 'interchange': '85058',
+ 'inventory': '147',
+ 'lugs': '5',
+ 'partnumbers': ['Part#: 20440141027X25',
+                 'Part#: A2044014102',
+                 'Part#: 20440141029700'],
+ 'price': '$290.03',
+ 'sizes': '18',
+ 'spokes': '10',
+ 'title': 'Mercedes-Benz C300 2008-2014 18″ Front Replica Wheel Machined',
+ 'variations': 'Replica Machined w/ Silver Pockets',
+ 'vehicles': ['2008-2015 Mercedes-Benz C350',
+              '2012-2015 Mercedes-Benz C250',
+              '2008-2015 Mercedes-Benz C Class',
+              '2008-2014 Mercedes-Benz C300',
+              '2008-2015 Mercedes-Benz C63 AMG'],
+ 'width': '8'}
+2026-01-30 11:47:01 [scrapy.core.engine] INFO: Closing spider (finished)
+2026-01-30 11:47:01 [scrapy.extensions.feedexport] INFO: Stored csv feed (12 items) in: results.csv
+2026-01-30 11:47:01 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 4771,
+ 'downloader/request_count': 13,
+ 'downloader/request_method_count/GET': 13,
+ 'downloader/response_bytes': 514490,
+ 'downloader/response_count': 13,
+ 'downloader/response_status_count/200': 13,
+ 'elapsed_time_seconds': 15.607761,
+ 'feedexport/success_count/FileFeedStorage': 1,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2026, 1, 30, 6, 47, 1, 476424, tzinfo=datetime.timezone.utc),
+ 'httpcompression/response_bytes': 2150617,
+ 'httpcompression/response_count': 13,
+ 'item_scraped_count': 12,
+ 'items_per_minute': 48.0,
+ 'log_count/DEBUG': 28,
+ 'log_count/INFO': 25,
+ 'log_count/WARNING': 1,
+ 'request_depth_max': 1,
+ 'response_received_count': 13,
+ 'responses_per_minute': 52.0,
+ 'scheduler/dequeued': 13,
+ 'scheduler/dequeued/memory': 13,
+ 'scheduler/enqueued': 13,
+ 'scheduler/enqueued/memory': 13,
+ 'start_time': datetime.datetime(2026, 1, 30, 6, 46, 45, 868663, tzinfo=datetime.timezone.utc)}
+2026-01-30 11:47:01 [scrapy.core.engine] INFO: Spider closed (finished)
+2026-01-30 11:50:13 [scrapy.utils.log] INFO: Scrapy 2.13.4 started (bot: wheelsamerica)
+2026-01-30 11:50:13 [scrapy.utils.log] INFO: Versions:
+{'lxml': '6.0.2',
+ 'libxml2': '2.11.9',
+ 'cssselect': '1.3.0',
+ 'parsel': '1.10.0',
+ 'w3lib': '2.3.1',
+ 'Twisted': '25.5.0',
+ 'Python': '3.14.0 (tags/v3.14.0:ebf955d, Oct  7 2025, 10:15:03) [MSC v.1944 '
+           '64 bit (AMD64)]',
+ 'pyOpenSSL': '25.3.0 (OpenSSL 3.5.4 30 Sep 2025)',
+ 'cryptography': '46.0.3',
+ 'Platform': 'Windows-11-10.0.26200-SP0'}
+2026-01-30 11:50:13 [scrapy.addons] INFO: Enabled addons:
+[]
+2026-01-30 11:50:13 [asyncio] DEBUG: Using selector: SelectSelector
+2026-01-30 11:50:13 [scrapy.utils.log] DEBUG: Using reactor: twisted.internet.asyncioreactor.AsyncioSelectorReactor
+2026-01-30 11:50:13 [scrapy.utils.log] DEBUG: Using asyncio event loop: asyncio.windows_events._WindowsSelectorEventLoop
+2026-01-30 11:50:13 [scrapy.extensions.telnet] INFO: Telnet Password: 1fed19785abcc028
+2026-01-30 11:50:13 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.feedexport.FeedExporter',
+ 'scrapy.extensions.logstats.LogStats']
+2026-01-30 11:50:13 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'wheelsamerica',
+ 'CONCURRENT_REQUESTS': 8,
+ 'DOWNLOAD_DELAY': 1.0,
+ 'FEED_EXPORT_ENCODING': 'utf-8-sig',
+ 'LOG_FILE': 'spider.log',
+ 'NEWSPIDER_MODULE': 'wheelsamerica.spiders',
+ 'RETRY_HTTP_CODES': [500, 502, 503, 504, 408, 429],
+ 'RETRY_TIMES': 5,
+ 'SPIDER_MODULES': ['wheelsamerica.spiders']}
+2026-01-30 11:50:14 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'wheelsamerica.middlewares.RotateAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2026-01-30 11:50:14 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.start.StartSpiderMiddleware',
+ 'scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2026-01-30 11:50:14 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2026-01-30 11:50:14 [scrapy.core.engine] INFO: Spider opened
+2026-01-30 11:50:14 [py.warnings] WARNING: D:\Scrapy-Playwright\venv\Lib\site-packages\scrapy\core\spidermw.py:433: ScrapyDeprecationWarning: wheelsamerica.spiders.wheels_spider.WheelsSpiderSpider defines the deprecated start_requests() method. start_requests() has been deprecated in favor of a new method, start(), to support asynchronous code execution. start_requests() will stop being called in a future version of Scrapy. If you use Scrapy 2.13 or higher only, replace start_requests() with start(); note that start() is a coroutine (async def). If you need to maintain compatibility with lower Scrapy versions, when overriding start_requests() in a spider class, override start() as well; you can use super() to reuse the inherited start() implementation without copy-pasting. See the release notes of Scrapy 2.13 for details: https://docs.scrapy.org/en/2.13/news.html
+  warn(
+
+2026-01-30 11:50:14 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2026-01-30 11:50:14 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2026-01-30 11:50:16 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wheelsamerica.com/> (referer: None)
+2026-01-30 11:50:16 [wheels_spider] INFO: Scraping page: https://wheelsamerica.com/
+2026-01-30 11:50:16 [wheels_spider] INFO: Found 12 products on this page
+2026-01-30 11:50:16 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wheelsamerica.com/product/jeep-wrangler-1987-1995-15-oem-wheel-rim/> (referer: https://wheelsamerica.com/)
+2026-01-30 11:50:16 [wheels_spider] INFO: Parsing wheel detail - URL: https://wheelsamerica.com/product/jeep-wrangler-1987-1995-15-oem-wheel-rim/
+2026-01-30 11:50:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wheelsamerica.com/product/jeep-wrangler-1987-1995-15-oem-wheel-rim/>
+{'Int2': '8826-1512',
+ 'bolt_circle': '4.5',
+ 'condition': 'Refurbished',
+ 'desc2': '15×7  5 lug wheel.  WHEEL ONLY! Does not include center cap, lugs, '
+          'or TPMS sensor.',
+ 'finish': 'Machined',
+ 'indents': [],
+ 'interchange': '1512',
+ 'inventory': '24',
+ 'lugs': '5',
+ 'partnumbers': ['Part#: 52003368'],
+ 'price': '$188.63',
+ 'sizes': '15',
+ 'spokes': '5',
+ 'title': 'Jeep Wrangler 1987-1995 15″ OEM Wheel Machined',
+ 'variations': 'No Variations',
+ 'vehicles': ['1987-1995 Jeep Wrangler',
+              '1987-1990 Jeep Wagoneer',
+              '1987-1993 Jeep Cherokee',
+              '1987-1992 Jeep Comanche'],
+ 'width': '7'}
+2026-01-30 11:50:18 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wheelsamerica.com/product/subaru-impreza-2017-2019-18-oem-wheel-rim-2/> (referer: https://wheelsamerica.com/)
+2026-01-30 11:50:18 [wheels_spider] INFO: Parsing wheel detail - URL: https://wheelsamerica.com/product/subaru-impreza-2017-2019-18-oem-wheel-rim-2/
+2026-01-30 11:50:18 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wheelsamerica.com/product/subaru-impreza-2017-2019-18-oem-wheel-rim-2/>
+{'Int2': '18492-68848',
+ 'bolt_circle': '100',
+ 'condition': 'Refurbished',
+ 'desc2': '18×7.5  5 lug wheel.  WHEEL ONLY! Does not include center cap, '
+          'lugs, or TPMS sensor.',
+ 'finish': 'Machined',
+ 'indents': ['Ident#: 28111FL02A'],
+ 'interchange': '68848',
+ 'inventory': '3',
+ 'lugs': '5',
+ 'partnumbers': ['Part#: 28111FL02A'],
+ 'price': '$286.67',
+ 'sizes': '18',
+ 'spokes': '10',
+ 'title': '2017-2021 Subaru Impreza 18″ OEM Wheel Rim Machined w/ Dark '
+          'Charcoal Pockets',
+ 'variations': 'Machined w/ Dark Charcoal Pockets',
+ 'vehicles': ['2017-2019 Subaru Impreza'],
+ 'width': '7.5'}
+2026-01-30 11:50:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wheelsamerica.com/product/toyota-camry-2018-2020-18-replica-wheel-rim/> (referer: https://wheelsamerica.com/)
+2026-01-30 11:50:19 [wheels_spider] INFO: Parsing wheel detail - URL: https://wheelsamerica.com/product/toyota-camry-2018-2020-18-replica-wheel-rim/
+2026-01-30 11:50:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wheelsamerica.com/product/toyota-camry-2018-2020-18-replica-wheel-rim/>
+{'Int2': '21075-75221',
+ 'bolt_circle': '4.5',
+ 'condition': 'New',
+ 'desc2': '18×8  5 lug wheel.  WHEEL ONLY! Does not include center cap, lugs, '
+          'or TPMS sensor.',
+ 'finish': 'Machined',
+ 'indents': ['Ident#: 4261106F80',
+             'Ident#: 4261106F90',
+             'Ident#: 4261106E10',
+             'Ident#: 4261106F70',
+             'Ident#: 4261133D10',
+             'Ident#: 4261133D30',
+             'Ident#: BBM'],
+ 'interchange': '75221',
+ 'inventory': '137',
+ 'lugs': '5',
+ 'partnumbers': ['Part#: 4261106J00',
+                 'Part#: 4261106F80',
+                 'Part#: 4261106F90',
+                 'Part#: 4261106E10',
+                 'Part#: 4261106F70',
+                 'Part#: 4261133D10',
+                 'Part#: 4261133D30'],
+ 'price': '$193.03',
+ 'sizes': '18',
+ 'spokes': '20',
+ 'title': '2018-2022 Toyota Camry 18″ Wheel Rim Replica Machined w/ Black '
+          'Pockets',
+ 'variations': 'Replica Machined w/ Black Pockets',
+ 'vehicles': ['2018-2022 Toyota Camry'],
+ 'width': '8'}
+2026-01-30 11:50:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wheelsamerica.com/product/ford-fusion-2017-2019-18-oem-wheel-rim-2/> (referer: https://wheelsamerica.com/)
+2026-01-30 11:50:21 [wheels_spider] INFO: Parsing wheel detail - URL: https://wheelsamerica.com/product/ford-fusion-2017-2019-18-oem-wheel-rim-2/
+2026-01-30 11:50:21 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wheelsamerica.com/product/ford-fusion-2017-2019-18-oem-wheel-rim-2/>
+{'Int2': '20437-10120',
+ 'bolt_circle': '108',
+ 'condition': 'Refurbished',
+ 'desc2': '18×8  5 lug wheel.  WHEEL ONLY! Does not include center cap, lugs, '
+          'or TPMS sensor.',
+ 'finish': 'Painted',
+ 'indents': ['Ident#: HS7Z1007A',
+             'Ident#: HS7C1007B1A',
+             'Ident#: HS7CB1A',
+             'Ident#: KS7C1007G1A',
+             'Ident#: KS7Z1007C',
+             'Ident#: KS7C1007B1A'],
+ 'interchange': '10120',
+ 'inventory': '8',
+ 'lugs': '5',
+ 'partnumbers': ['Part#: HS7C1007B1A',
+                 'Part#: HS7CB1A',
+                 'Part#: KS7Z1007C',
+                 'Part#: KS7Z1007E',
+                 'Part#: KS7C1007G1A',
+                 'Part#: HS7Z1007A',
+                 'Part#: JS7Z1007A'],
+ 'price': '$226.33',
+ 'sizes': '18',
+ 'spokes': '10',
+ 'title': '2018-2020 Ford Fusion 18″ OEM Wheel Rim Charcoal',
+ 'variations': 'Charcoal',
+ 'vehicles': ['2017-2020 Ford Fusion'],
+ 'width': '8'}
+2026-01-30 11:50:22 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wheelsamerica.com/product/mercedes-benz-s550-2014-2017-20-replica-wheel-rim-2/> (referer: https://wheelsamerica.com/)
+2026-01-30 11:50:22 [wheels_spider] INFO: Parsing wheel detail - URL: https://wheelsamerica.com/product/mercedes-benz-s550-2014-2017-20-replica-wheel-rim-2/
+2026-01-30 11:50:22 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wheelsamerica.com/product/mercedes-benz-s550-2014-2017-20-replica-wheel-rim-2/>
+{'Int2': '20409-85355',
+ 'bolt_circle': '112',
+ 'condition': 'New',
+ 'desc2': '20×9.5  5 lug wheel.  WHEEL ONLY! Does not include center cap, '
+          'lugs, or TPMS sensor.',
+ 'finish': 'Machined',
+ 'indents': ['Ident#: 2224010500',
+             'Ident#: 22240105007X21',
+             'Ident#: 22240100027X45',
+             'Ident#: 22240117027756',
+             'Ident#: 222401050080'],
+ 'interchange': '85355',
+ 'inventory': '74',
+ 'lugs': '5',
+ 'partnumbers': ['Part#: 2224010500',
+                 'Part#: 22240100027X45',
+                 'Part#: 222401050080',
+                 'Part#: 22240105007X21'],
+ 'price': '$357.93',
+ 'sizes': '20',
+ 'spokes': '14',
+ 'title': 'Mercedes-Benz S550 2014-2017 20″ Rear Replica Wheel Machined',
+ 'variations': 'Replica Machined w/ Charcoal Pockets',
+ 'vehicles': ['2015-2016 Mercedes-Benz S400',
+              '2016-2016 Mercedes-Benz S600',
+              '2014-2017 Mercedes-Benz S550',
+              '2014-2018 Mercedes-Benz S Class',
+              '2015-2016 Mercedes-Benz S550e',
+              '2014-2018 Mercedes-Benz CLS550'],
+ 'width': '9.5'}
+2026-01-30 11:50:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wheelsamerica.com/product/ford-explorer-2016-2019-20-oem-wheel-rim-4/> (referer: https://wheelsamerica.com/)
+2026-01-30 11:50:23 [wheels_spider] INFO: Parsing wheel detail - URL: https://wheelsamerica.com/product/ford-explorer-2016-2019-20-oem-wheel-rim-4/
+2026-01-30 11:50:23 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wheelsamerica.com/product/ford-explorer-2016-2019-20-oem-wheel-rim-4/>
+{'Int2': '14738-10060',
+ 'bolt_circle': '4.5',
+ 'condition': 'Refurbished',
+ 'desc2': '20×8.5  5 lug wheel.  WHEEL ONLY! Does not include center cap, '
+          'lugs, or TPMS sensor.',
+ 'finish': 'Polished',
+ 'indents': ['Ident#: FB531007BA', 'Ident#: FB53BA', 'Ident#: FB531007BB'],
+ 'interchange': '10060',
+ 'inventory': '7',
+ 'lugs': '5',
+ 'partnumbers': ['Part#: FB5Z1007C', 'Part#: FB531007BB'],
+ 'price': '$265.95',
+ 'sizes': '20',
+ 'spokes': '10',
+ 'title': '2013-2019 Ford Explorer 20″ OEM Wheel Rim Polished',
+ 'variations': 'Polished',
+ 'vehicles': ['2016-2019 Ford Explorer'],
+ 'width': '8.5'}
+2026-01-30 11:50:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wheelsamerica.com/product/honda-civic-2017-2020-18-replica-wheel-rim/> (referer: https://wheelsamerica.com/)
+2026-01-30 11:50:23 [wheels_spider] INFO: Parsing wheel detail - URL: https://wheelsamerica.com/product/honda-civic-2017-2020-18-replica-wheel-rim/
+2026-01-30 11:50:23 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wheelsamerica.com/product/honda-civic-2017-2020-18-replica-wheel-rim/>
+{'Int2': '22192-64108',
+ 'bolt_circle': '4.5',
+ 'condition': 'New',
+ 'desc2': '18×8  5 lug wheel.  WHEEL ONLY! Does not include center cap, lugs, '
+          'or TPMS sensor.',
+ 'finish': 'Machined',
+ 'indents': ['Ident#: 42700TGGA71',
+             'Ident#: 42700TBFA91',
+             'Ident#: 42700TGGA72',
+             'Ident#: 42800TBAAC2',
+             'Ident#: TBF18080A'],
+ 'interchange': '64108',
+ 'inventory': '115',
+ 'lugs': '5',
+ 'partnumbers': ['Part#: 42700TGGA72',
+                 'Part#: 42800TBAAC2',
+                 'Part#: 42700TGGA71',
+                 'Part#: 42700TBFA91',
+                 'Part#: 42700TBAAD1'],
+ 'price': '$173.63',
+ 'sizes': '18',
+ 'spokes': '10',
+ 'title': '2021 Honda Civic 18″ Wheel Rim Replica Machined',
+ 'variations': 'Replica Machined',
+ 'vehicles': ['2017-2021 Honda Civic'],
+ 'width': '8'}
+2026-01-30 11:50:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wheelsamerica.com/product/mercedes-benz-s550-2014-2017-20-replica-wheel-rim/> (referer: https://wheelsamerica.com/)
+2026-01-30 11:50:25 [wheels_spider] INFO: Parsing wheel detail - URL: https://wheelsamerica.com/product/mercedes-benz-s550-2014-2017-20-replica-wheel-rim/
+2026-01-30 11:50:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wheelsamerica.com/product/mercedes-benz-s550-2014-2017-20-replica-wheel-rim/>
+{'Int2': '20408-85353',
+ 'bolt_circle': '112',
+ 'condition': 'New',
+ 'desc2': '20×8.5  5 lug wheel.  WHEEL ONLY! Does not include center cap, '
+          'lugs, or TPMS sensor.',
+ 'finish': 'Machined',
+ 'indents': ['Ident#: 2224010400',
+             'Ident#: 22240104007X21',
+             'Ident#: 22240104007X23',
+             'Ident#: 222401040080'],
+ 'interchange': '85353',
+ 'inventory': '101',
+ 'lugs': '5',
+ 'partnumbers': ['Part#: 2224010400',
+                 'Part#: 222401040080',
+                 'Part#: 22240104007X21',
+                 'Part#: 22240104007X23'],
+ 'price': '$299.73',
+ 'sizes': '20',
+ 'spokes': '14',
+ 'title': 'Mercedes-Benz S550 2014-2017 20″ Front Replica Wheel Machined',
+ 'variations': 'Replica Machined w/ Charcoal Pockets',
+ 'vehicles': ['2014-2017 Mercedes-Benz S550',
+              '2015-2016 Mercedes-Benz S400',
+              '2014-2018 Mercedes-Benz S Class',
+              '2018-2019 Mercedes-Benz S450',
+              '2015-2017 Mercedes-Benz S550e',
+              '2015-2019 Mercedes-Benz S65 AMG',
+              '2018-2019 Mercedes-Benz S560',
+              '2015-2017 Mercedes-Benz S600',
+              '2014-2019 Mercedes-Benz S63 AMG'],
+ 'width': '8.5'}
+2026-01-30 11:50:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wheelsamerica.com/product/ford-fusion-2013-2016-19-oem-wheel-rim/> (referer: https://wheelsamerica.com/)
+2026-01-30 11:50:26 [wheels_spider] INFO: Parsing wheel detail - URL: https://wheelsamerica.com/product/ford-fusion-2013-2016-19-oem-wheel-rim/
+2026-01-30 11:50:26 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wheelsamerica.com/product/ford-fusion-2013-2016-19-oem-wheel-rim/>
+{'Int2': '6265-3962',
+ 'bolt_circle': '108',
+ 'condition': 'Refurbished',
+ 'desc2': '19×8  5 lug wheel.  WHEEL ONLY! Does not include center cap, lugs, '
+          'or TPMS sensor.',
+ 'finish': 'Hyper',
+ 'indents': ['Ident#: DS7C1007H1B', 'Ident#: DS7CH1B', 'Ident#: DS701007H1A'],
+ 'interchange': '3962',
+ 'inventory': '27',
+ 'lugs': '5',
+ 'partnumbers': ['Part#: DS7Z1007H'],
+ 'price': '$364.17',
+ 'sizes': '19',
+ 'spokes': '10',
+ 'title': 'Ford Fusion 2013-2016 19″ OEM Wheel',
+ 'variations': 'Hyper Silver',
+ 'vehicles': ['2013-2016 Ford Fusion'],
+ 'width': '8'}
+2026-01-30 11:50:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wheelsamerica.com/product/honda-accord-2016-2017-19-oem-wheel-rim-2/> (referer: https://wheelsamerica.com/)
+2026-01-30 11:50:27 [wheels_spider] INFO: Parsing wheel detail - URL: https://wheelsamerica.com/product/honda-accord-2016-2017-19-oem-wheel-rim-2/
+2026-01-30 11:50:27 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wheelsamerica.com/product/honda-accord-2016-2017-19-oem-wheel-rim-2/>
+{'Int2': '18615-64083',
+ 'bolt_circle': '4.5',
+ 'condition': 'Refurbished',
+ 'desc2': '19×8  5 lug wheel.  WHEEL ONLY! Does not include center cap, lugs, '
+          'or TPMS sensor.',
+ 'finish': 'Machined',
+ 'indents': ['Ident#: 42700T2AL92', 'Ident#: T2919080A'],
+ 'interchange': '64083',
+ 'inventory': '21',
+ 'lugs': '5',
+ 'partnumbers': ['Part#: 42700T2AL92'],
+ 'price': '$198.40',
+ 'sizes': '19',
+ 'spokes': '10',
+ 'title': 'Honda ACCORD 2016-2017 19″ OEM Wheel Machined',
+ 'variations': 'Machined w/ Black Pockets',
+ 'vehicles': ['2016-2017 Honda ACCORD'],
+ 'width': '8'}
+2026-01-30 11:50:28 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wheelsamerica.com/product/mercedes-benz-560sl-1986-1989-15-oem-wheel-rim-2/> (referer: https://wheelsamerica.com/)
+2026-01-30 11:50:28 [wheels_spider] INFO: Parsing wheel detail - URL: https://wheelsamerica.com/product/mercedes-benz-560sl-1986-1989-15-oem-wheel-rim-2/
+2026-01-30 11:50:28 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wheelsamerica.com/product/mercedes-benz-560sl-1986-1989-15-oem-wheel-rim-2/>
+{'Int2': '20421-65139',
+ 'bolt_circle': '112',
+ 'condition': 'Refurbished',
+ 'desc2': '15×7  5 lug wheel.  WHEEL ONLY! Does not include center cap, lugs, '
+          'or TPMS sensor.',
+ 'finish': 'Painted',
+ 'indents': ['Ident#: 1264003002', 'Ident#: 1264003402', 'Ident#: 1264003502'],
+ 'interchange': '65139',
+ 'inventory': '4',
+ 'lugs': '5',
+ 'partnumbers': ['Part#: 1264003002', 'Part#: 1264003502'],
+ 'price': '$297.18',
+ 'sizes': '15',
+ 'spokes': '15',
+ 'title': 'Mercedes-Benz 560SL 1986-1989 15″ OEM Wheel All Silver',
+ 'variations': 'All Silver',
+ 'vehicles': ['1986-1989 Mercedes-Benz 560SL',
+              '1986-1987 Mercedes-Benz 300D',
+              '1986-1987 Mercedes-Benz 300SDL',
+              '1987-1987 Mercedes-Benz 420',
+              '1986-1987 Mercedes-Benz 560SEC',
+              '1986-1987 Mercedes-Benz 560SEL',
+              '1986-1989 Mercedes-Benz 560'],
+ 'width': '7'}
+2026-01-30 11:50:30 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://wheelsamerica.com/product/mercedes-benz-c300-2008-2014-18-replica-wheel-rim-2/> (referer: https://wheelsamerica.com/)
+2026-01-30 11:50:30 [wheels_spider] INFO: Parsing wheel detail - URL: https://wheelsamerica.com/product/mercedes-benz-c300-2008-2014-18-replica-wheel-rim-2/
+2026-01-30 11:50:30 [scrapy.core.scraper] DEBUG: Scraped from <200 https://wheelsamerica.com/product/mercedes-benz-c300-2008-2014-18-replica-wheel-rim-2/>
+{'Int2': '18674-85058',
+ 'bolt_circle': '112',
+ 'condition': 'New',
+ 'desc2': '18×8  5 lug wheel.  WHEEL ONLY! Does not include center cap, lugs, '
+          'or TPMS sensor.',
+ 'finish': 'Machined',
+ 'indents': ['Ident#: 2044014102',
+             'Ident#: 20440141029700',
+             'Ident#: 20440141027X25',
+             'Ident#: A2044014102'],
+ 'interchange': '85058',
+ 'inventory': '147',
+ 'lugs': '5',
+ 'partnumbers': ['Part#: 20440141027X25',
+                 'Part#: A2044014102',
+                 'Part#: 20440141029700'],
+ 'price': '$290.03',
+ 'sizes': '18',
+ 'spokes': '10',
+ 'title': 'Mercedes-Benz C300 2008-2014 18″ Front Replica Wheel Machined',
+ 'variations': 'Replica Machined w/ Silver Pockets',
+ 'vehicles': ['2008-2015 Mercedes-Benz C350',
+              '2012-2015 Mercedes-Benz C250',
+              '2008-2015 Mercedes-Benz C Class',
+              '2008-2014 Mercedes-Benz C300',
+              '2008-2015 Mercedes-Benz C63 AMG'],
+ 'width': '8'}
+2026-01-30 11:50:30 [scrapy.core.engine] INFO: Closing spider (finished)
+2026-01-30 11:50:30 [scrapy.extensions.feedexport] INFO: Stored csv feed (12 items) in: results.csv
+2026-01-30 11:50:30 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 4868,
+ 'downloader/request_count': 13,
+ 'downloader/request_method_count/GET': 13,
+ 'downloader/response_bytes': 515095,
+ 'downloader/response_count': 13,
+ 'downloader/response_status_count/200': 13,
+ 'elapsed_time_seconds': 15.524606,
+ 'feedexport/success_count/FileFeedStorage': 1,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2026, 1, 30, 6, 50, 30, 163240, tzinfo=datetime.timezone.utc),
+ 'httpcompression/response_bytes': 2152286,
+ 'httpcompression/response_count': 13,
+ 'item_scraped_count': 12,
+ 'items_per_minute': 48.0,
+ 'log_count/DEBUG': 28,
+ 'log_count/INFO': 25,
+ 'log_count/WARNING': 1,
+ 'request_depth_max': 1,
+ 'response_received_count': 13,
+ 'responses_per_minute': 52.0,
+ 'scheduler/dequeued': 13,
+ 'scheduler/dequeued/memory': 13,
+ 'scheduler/enqueued': 13,
+ 'scheduler/enqueued/memory': 13,
+ 'start_time': datetime.datetime(2026, 1, 30, 6, 50, 14, 638634, tzinfo=datetime.timezone.utc)}
+2026-01-30 11:50:30 [scrapy.core.engine] INFO: Spider closed (finished)
