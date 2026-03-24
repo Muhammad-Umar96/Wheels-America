@@ -4,11 +4,10 @@ from wheelsamerica.items import WheelsamericaItem
 
 class WheelsSpiderSpider(scrapy.Spider):
     name = "wheels_spider"
-    url = "https://wheelsamerica.com/shop/"
 
     def start_requests(self):
         yield scrapy.Request(
-            url='https://wheelsamerica.com/',
+            url='https://wheelsamerica.com/shop/',
             callback=self.parse,
             dont_filter=True
         )
@@ -82,8 +81,16 @@ class WheelsSpiderSpider(scrapy.Spider):
         int2 = response.css('div.panel.entry-content h5::text').get()
         item['Int2'] = int2.split(':')[-1].strip() if int2 and ':' in int2 else int2
         
-        item['vehicles'] = response.css('div.panel.entry-content p:nth-of-type(4) i::text').getall()
-        item['partnumbers'] = response.css('div.panel.entry-content p:nth-of-type(5) i::text').getall()
-        item['indents'] = response.css('div.panel.entry-content p:nth-of-type(6) i::text').getall()
+        item['vehicles'] = response.css('table.shop_attributes[aria-label="Vehicle fitment"] tbody tr td::text').getall()
+        item['partnumbers'] = response.css('table.shop_attributes[aria-label="Part numbers"] tbody tr td::text').getall()
+        item['indents'] = response.css('table.shop_attributes[aria-label="Ident numbers"] tbody tr td::text').getall()
+
+        image_url = response.css('img.wp-post-image::attr(data-lazy-src)').get()
+        if image_url == None:
+            image_url = response.css('img.wp-post-image::attr(src)').get()
+        
+        item['image_url'] = image_url
+
+        item['url'] = response.url
         
         yield item
