@@ -25,3 +25,5 @@ class WheelsamericaItem(scrapy.Item):
     vehicles = scrapy.Field()
     partnumbers = scrapy.Field()
     indents = scrapy.Field()
+    url = scrapy.Field()
+    image_url = scrapy.Field()
