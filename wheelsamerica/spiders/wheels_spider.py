@@ -76,13 +76,16 @@ class WheelsSpiderSpider(scrapy.Spider):
         price = "".join(response.css('div.product-price-container p.price.product-page-price span.woocommerce-Price-amount.amount bdi ::text').getall()).strip()
         item['price'] = price if price else None
         
-        item['desc2'] = response.css('div.panel.entry-content p:nth-of-type(2)::text').get()
+        desc_parts = response.css('p[itemprop="description"]::text').getall()
+        item['desc2'] = ' '.join(part.strip() for part in desc_parts if part.strip())
         
         int2 = response.css('div.panel.entry-content h5::text').get()
         item['Int2'] = int2.split(':')[-1].strip() if int2 and ':' in int2 else int2
         
         item['vehicles'] = response.css('table.shop_attributes[aria-label="Vehicle fitment"] tbody tr td::text').getall()
-        item['partnumbers'] = response.css('table.shop_attributes[aria-label="Part numbers"] tbody tr td::text').getall()
+        raw = response.css('table.shop_attributes[aria-label="Part numbers"] tbody tr td::text').getall()
+        item['partnumbers'] = [''.join(td.split(',')) for td in raw if td.strip()]
+
         item['indents'] = response.css('table.shop_attributes[aria-label="Ident numbers"] tbody tr td::text').getall()
 
         image_url = response.css('img.wp-post-image::attr(data-lazy-src)').get()
