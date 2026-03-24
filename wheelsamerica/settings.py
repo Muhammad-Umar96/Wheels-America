@@ -26,13 +26,13 @@ DOWNLOADER_MIDDLEWARES = {
     "wheelsamerica.middlewares.RotateAgentMiddleware": 543,
 }
 
-CONCURRENT_REQUESTS = 8  # Much lower concurrency
-DOWNLOAD_DELAY = 1.0     # Wait 1 second between requests
-RANDOMIZE_DOWNLOAD_DELAY = True  # Randomize delay (0.5-1.5x)
+# CONCURRENT_REQUESTS = 8  # Much lower concurrency
+# DOWNLOAD_DELAY = 1.0     # Wait 1 second between requests
+# RANDOMIZE_DOWNLOAD_DELAY = True  # Randomize delay (0.5-1.5x)
 
-# Retry settings
-RETRY_TIMES = 5
-RETRY_HTTP_CODES = [500, 502, 503, 504, 408, 429]
+# # Retry settings
+# RETRY_TIMES = 5
+# RETRY_HTTP_CODES = [500, 502, 503, 504, 408, 429]
 
 # Enable and configure the AutoThrottle extension
 # AUTOTHROTTLE_ENABLED = True
@@ -42,14 +42,14 @@ RETRY_HTTP_CODES = [500, 502, 503, 504, 408, 429]
 # AUTOTHROTTLE_DEBUG = False
 
 # HTTP Caching
-HTTPCACHE_ENABLED = False
-HTTPCACHE_DIR = 'httpcache'
-HTTPCACHE_STORAGE = 'scrapy.extensions.httpcache.FilesystemCacheStorage'
-HTTPCACHE_POLICY = 'scrapy.extensions.httpcache.DummyPolicy'
+# HTTPCACHE_ENABLED = False
+# HTTPCACHE_DIR = 'httpcache'
+# HTTPCACHE_STORAGE = 'scrapy.extensions.httpcache.FilesystemCacheStorage'
+# HTTPCACHE_POLICY = 'scrapy.extensions.httpcache.DummyPolicy'
 
 # Logging
 # LOG_LEVEL = 'INFO'
-LOG_FILE='spider.log'
+# LOG_FILE='spider.log'
 
 # Feed settings
 FEED_EXPORT_ENCODING = "utf-8-sig"
